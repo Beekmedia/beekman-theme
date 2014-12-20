@@ -1,0 +1,156 @@
+/****************************************************************************************************************
+
+2. Menu
+
+****************************************************************************************************************/
+
+
+/* Menu */
+.nav-primary {
+	background:none;
+	background: -webkit-gradient( linear, left top, right top, color-stop(.2, #444), color-stop(1, #222) );
+	background: -moz-linear-gradient( top left, #444 20%, #222 100% );
+	border-bottom:0;
+	margin:0;
+	line-height:30px;
+	padding-top:2px;
+}
+.ie .nav-primary { background:none; }
+.nav-primary ul {}
+.nav-primary li {}
+
+/* Default Links */
+.nav-primary li a {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	}
+
+.nav-primary li a, .nav-primary li a:visited {
+	color:#aaa;
+	font-weight:normal;
+	padding:8px 12px;
+	margin-right:2px;
+}
+
+/* Hover Links */
+.nav-primary li a:hover, .nav-primary li a:active, .nav-primary li a:focus,
+.nav-primary li:hover a, .nav-primary li:hover a:visited {
+	background-color:#eee;
+	border-bottom:0;
+}
+
+/* Active Links */
+.nav-primary li.current-menu-item a, .nav-primary li.current-menu-item a:visited,
+.nav-primary li.current_page_ancestor a, .nav-primary li.current_page_ancestor a:visited,
+.nav-primary li.current-menu-ancestor a, .nav-primary li.current-menu-ancestor a:visited {
+	background:#fff;
+	color:#333;
+	border-bottom:0;
+}
+
+/* Sub-menu */
+.nav-primary li ul,
+.nav-primary li:hover ul {
+	background:transparent;
+}
+
+/* Sub-menu Links */
+.nav-primary li li {}
+.nav-primary li li a, .nav-primary li li a:visited,
+.nav-primary li:hover li a, .nav-primary li:hover li a:visited {
+	background:#eee;
+	color:#333;
+	margin-right:0;
+}
+
+/* Sub-menu Hover Links */
+.nav-primary li:hover li a:hover, .nav-primary li:hover li a:active,
+.nav-primary li li.current-menu-item a, .nav-primary li li.current-menu-item a:visited,
+.nav-primary li li.current-menu-ancestor a, .nav-primary li li.current-menu-ancestor a:visited,
+.nav-primary li li:hover a, .nav-primary li li:hover a:visited {
+	background:#333;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #555), color-stop(1, #333) );
+	background: -moz-linear-gradient( center top, #555 20%, #333 100% );
+	color:#fff;
+}
+
+/* Sub-menu Active Links */
+.nav-primary li li.current-menu-item a, .nav-primary li li.current-menu-item a:visited,
+.nav-primary li li.current-menu-ancestor a, .nav-primary li li.current-menu-ancestor a:visited,
+.nav-primary li li:hover a, .nav-primary li li:hover a:visited {
+	background:#333;
+}
+
+/* Sub-sub-menu */
+.nav-primary li li ul,
+.nav-primary li:hover li ul {
+	background:transparent;
+}
+
+/* Sub-sub-menu Links */
+.nav li li li {}
+.nav li li li a, .nav li li li a:visited,
+.nav li:hover li li a, .nav li:hover li li a:visited,
+.nav-primary li.current_page_ancestor li.current-menu-ancestor li a,
+.nav-primary li.current_page_ancestor li.current-menu-ancestor li a:visited {
+	background:#333;
+}
+
+/* Sub-sub-menu Hover Links */
+.nav-primary li li li a:hover, .nav-primary li li li a:active,
+.nav-primary li:hover li li a:hover, .nav-primary li:hover li li a:active,
+.nav-primary li.current_page_ancestor li li a:hover, .nav-primary li.current_page_ancestor li li a:active,
+.nav-primary li.current_page_ancestor li.current-menu-ancestor li a:hover,
+.nav-primary li.current_page_ancestor li.current-menu-ancestor li a:active {
+	background-color: #eee;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #eee), color-stop(1, #bbb) );
+	background: -moz-linear-gradient( center top, #eee 20%, #bbb 100% );
+	color:#333;
+}
+
+/* Sub-sub-menu Active Links */
+.nav-primary li.current_page_ancestor li.current-menu-ancestor li.current-menu-item a,
+.nav-primary li.current_page_ancestor li.current-menu-ancestor li.current-menu-item a:visited {
+	background:#eee;
+	color:#333;
+}
+
+/* Top Nav Menu Styles */
+.nav-sb_before { background:transparent; }
+.nav-sb_before ul {}
+.nav-sb_before li { line-height:22px; margin-right:2px; }
+
+/* Top Nav Links */
+.nav-sb_before li a, .nav-sb_before li a:visited {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	font-weight:normal;
+	padding:2px 8px;
+}
+
+/* Top Nav Active Links */
+.nav-sb_before li:hover a, .nav-sb_before li:hover a:visited,
+.nav-sb_before li a:hover, .nav-sb_before li a:active, .nav-sb_before li a:focus,
+.nav-sb_before li.current-menu-item a, .nav-sb_before li.current-menu-item a:visited,
+.nav-sb_before li.current-menu-ancestor a, .nav-sb_before li.current-menu-ancestor a:visited {
+	background:#aaa;
+	color:#222;
+}
+.nav-sb_before li.current-menu-item a, .nav-sb_before li.current-menu-item a:visited,
+.nav-sb_before li.current-menu-ancestor a, .nav-sb_before li.current-menu-ancestor a:visited {
+	background:#ddd;
+	color:#222;
+}
+
+.nav-sb_before li li a,
+.nav-sb_before li li a:visited {
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+}
+
+.nav-sb_before li ul {
+	padding-top:3px;
+}

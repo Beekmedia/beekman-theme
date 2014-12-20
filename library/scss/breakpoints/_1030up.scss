@@ -1,0 +1,27 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+//at desktop size, we want two fewer vertical images and one more horizontal image
+
+.home #gallery-1 > figure:nth-child(4), .home #gallery-1 > figure:nth-child(5){
+	display: none;
+	visibility: hidden;
+}
+
+.home #gallery-2 > figure:nth-child(1) {
+	display: inline-block;
+	visibility: visible;
+}
+
+
+.wrap {
+  width: 1040px;
+}
+
