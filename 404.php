@@ -10,27 +10,23 @@
 
 							<header class="article-header">
 
-								<h1><?php _e( 'Page Not Found', 'beekmantheme' ); ?></h1>
+								<h1><?php _e( 'Not What You Were Looking For, 'beekmantheme' ); ?></h1>
 
 							</header>
 
 							<section class="entry-content">
 
-								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'beekmantheme' ); ?></p>
+								<p><?php _e( 'The link you were following was not found. Please try searching or browsing to locate it.', 'beekmantheme' ); ?></p>
 
 							</section>
 
 							<section class="search">
 
-									<p><?php get_search_form(); ?></p>
+							<p><?php get_search_form(); ?></p>
 
 							</section>
 
-							<footer class="article-footer">
-
-									<p><?php _e( 'This is the 404.php template.', 'beekmantheme' ); ?></p>
-
-							</footer>
+							<footer class="article-footer"></footer>
 
 						</article>
 

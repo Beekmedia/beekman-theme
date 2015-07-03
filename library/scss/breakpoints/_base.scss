@@ -17,6 +17,7 @@ article.post-212 > header {
 
 
 article {font-size: 0.875rem;}
+
 /* Remove all styling from Galleries. This will allow Masonry to work a bit better. Only available on WP >= 3.9 since it requires HTML5 <figure> */
 .gallery { margin: 1.5em auto; }
 
@@ -24,12 +25,25 @@ article {font-size: 0.875rem;}
 font-size: 0.875rem;
 }
 
+.home #gallery-2 {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.home #gallery-2 .gallery-item {
+  position: relative !important;
+  float: left !important;
+  display: inline !important;
+  top: 0 !important;
+  left: 0 !important;
+}
 //images in widget areas are moved around based on dimensions
-.home #gallery-2 > figure:nth-child(1), #gallery-2 > figure:nth-child(2) {
+.home #gallery-2 > .gallery-item:nth-child(1), #gallery-2 > .gallery-item:nth-child(2) {
 	display: none;
 	visibility: hidden;
 }
-.home #gallery-1 > figure:nth-child(4), #gallery-1 > figure:nth-child(5) {
+
+.home #gallery-1 > .gallery-item:nth-child(4), #gallery-1 > .gallery-item:nth-child(5) {
 	display: inline-block;
 	visibility: visible;
 }
@@ -39,17 +53,19 @@ font-size: 0.875rem;
 	visibility: hidden;
 }
 
-.home #gallery-2 figure {
+.home #gallery-2 .gallery-item {
 margin: 0 8px 0.5rem 0;
 }
 
-.home figure {float: left;}
+.home .gallery-item {float: left !important; }
 
-.home #gallery-1 > figure {margin: 0 0 10px 0;}
+.home #gallery-1 > .gallery-item {
+  margin: 0 0 10px;
+}
 
-.home #gallery-1 > figure > div > img{
-	width: 100%;
-	height: auto;
+.home #gallery-1 > .gallery-item > .gallery-icon > img{
+	width: 100% !important;
+	height: auto !important;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Play);

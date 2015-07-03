@@ -9,26 +9,27 @@ on larger screens.
 
 ******************************************************************/
 //at this size we can fit one more horizontal image
-.home #gallery-2 > figure:nth-child(2) {
+.home #gallery-2 > .gallery-item:nth-child(2) {
 	display: inline-block;
 	visibility: visible;
 }
 //hide one more vertical image
-.home #gallery-1 > figure:nth-child(3){
+.home #gallery-1 > .gallery-item:nth-child(3), .home #gallery-1 > .gallery-item:nth-child(4){
 	display: none;
 	visibility: hidden;
 }
 
+.home #gallery-1 {height: auto !important;}
 .wrap {
   width: 1268px;
 }
 
 .home {
 	.d-2of7 {
-		width: 300px;
+		// width: 300px;
 	}
 	.d-5of7 {
-		padding-right: 0.75em;
-		width: 76.329%;
+		// padding-right: 0.75em;
+		// width: 76.329%;
 	}
 }

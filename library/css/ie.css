@@ -375,11 +375,11 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-.home #gallery-1 > figure:nth-child(4), .home #gallery-1 > figure:nth-child(5) {
+.home #gallery-1 > .gallery-item:nth-child(4), .home #gallery-1 > .gallery-item:nth-child(5) {
   display: none;
   visibility: hidden; }
 
-.home #gallery-2 > figure:nth-child(1) {
+.home #gallery-2 > .gallery-item:nth-child(1) {
   display: inline-block;
   visibility: visible; }
 

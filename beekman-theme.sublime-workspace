@@ -1,0 +1,823 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"teas",
+				"$teasers_query〔variable〕"
+			],
+			[
+				"abs",
+				"absolute  (value)"
+			],
+			[
+				"the_po",
+				"the_post_thumbnail"
+			],
+			[
+				"WP_DEBUG_D",
+				"WP_DEBUG_DISPLAY"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 344.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: com",
+				"Snippet: Comment - Full section comment"
+			],
+			[
+				"comm",
+				"Snippet: PHP sub-header comment"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: comm",
+				"Snippet: Comment - Block style comment"
+			],
+			[
+				"Snippet: php",
+				"Snippet: PHP sub-header comment"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent lines",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ri",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 131.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"save project",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/djbeeker/github/beekman-theme",
+		"/Users/djbeeker/github/beekman-theme/library",
+		"/Users/djbeeker/github/beekman-theme/library/js",
+		"/Users/djbeeker/github/beekman-theme/library/scss",
+		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints"
+	],
+	"file_history":
+	[
+		"/Users/djbeeker/github/beekman-theme/front-page.php",
+		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_1030up.scss",
+		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_base.scss",
+		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_1270up.scss",
+		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_768up.scss",
+		"/Users/djbeeker/github/beekman-theme/sidebar-home-after.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-resources.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/functions.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/js/scripts.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/header-blog.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/breakpoints/_base.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-services2.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/dev/oasis.sublime-workspace",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/style.scss",
+		"/Users/djbeeker/Desktop/oasis-wp-2/header.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/breakpoints/_768up.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/header.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/pending.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/partials/_mixins.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/css/ie.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/legacy.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/css/style.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/breakpoints/_1240up.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/oasis-wp-2.sublime-workspace",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/style.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/footer.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/archive.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/post-formats/format.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/index.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-header.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/custom.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/breakpoints/_1030up.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-front.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-index.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-page.php",
+		"/Users/djbeeker/github/oasis-wp-2/includes/partials/menu-resources.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/sidebar.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/page.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/single.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/jquery.serialScroll.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/jquery.colorbox.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/css/jquery-ui-1.8.16.custom.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/post-formats/format-aside.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/deleted/taxonomy-custom_cat.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/dev/beachbar_big.psd",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/sample-content/running-lrg.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/responsiveimgs.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/plugin.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/jquery.url.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/filamentgroup-Responsive-Images-d523a0c/sample-content/running-lrg.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/jquery.scrollTo.min.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/jquery.scrollTo.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/demo.html",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/content/homer.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/example2/images/loading.gif",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/example3/images/loading.gif",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/example4/images/loading.gif",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/images/loading.gif",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/css-gradients-via-canvas.js",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/content/marylou.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/content/ohoopee1.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/content/ohoopee2.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/custom_functions.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/content/flash.html",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/js/colorbox/colorbox.ai",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/css/tooltips.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/comments.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/.phpintel/9614105e54b8dcd12472294b713cfb5d",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/single-custom_type.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/css/legacy.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/apple-icon-touch.psd",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/beachbar_big.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/beachbar_big.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/beck/Master.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/contact-12-16-13.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/divider.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/freebies/NavigatingTheTwilightZoneOfCaring.pdf",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/loading.gif",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/login-logo.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/pdf-icon.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/punctuation-marks-dk-r.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/beck-screen.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/facebook-screen.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/feedburnerscreenshot.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/katie-screen.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/linkedin-screen-th.jpg",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/linkedin-screen.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social-screens/skype-screen.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social_icons/facebook.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social_icons/rss.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/social_icons/social/twitter.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/images/water_tile.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/oasis.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/screenshot.png",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/sidebar-testimonials.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/.editorconfig",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/WordHighlight/Word Highlight.sublime-settings",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/Word Highlight.sublime-settings",
+		"/Users/djbeeker/Library/Application Support/Sublime Text 3/Packages/User/bh_wrapping.sublime-settings",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/content.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/content-home.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/404.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/content-page.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/sidebar-home.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/jquery-ui-custom_oasis.scss",
+		"/Users/djbeeker/Desktop/blog_block.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/layout.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/content-services.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/deleted/custom-post-types.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/deleted/deleted-functions.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/modules/_buttons.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/modules/_forms.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/partials/_typography.scss",
+		"/private/etc/apache2/extra/httpd-vhosts.conf~orig",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/partials/_functions.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/partials/_variables.scss",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/header copy.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/page-custom.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/archive-custom_type.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/search.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/bones.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/css/style-blessed1.css",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/admin.php",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/jquery-ui-custom_oasis.less",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/less/jquery-ui-oasis.less",
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/less/_print.less"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/",
+			"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/,*.scss",
+			"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/",
+			"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss",
+			"-*.css,<open files>",
+			"-*.css",
+			"-*.css,<open folders>",
+			"",
+			"<open folders>,<open files>",
+			"*.scss",
+			"<open folders>,<open files>,-*.css",
+			"<open folders>,<open files>",
+			"",
+			"*.php, ,<open folders>",
+			"*.less, ,<open folders>",
+			"*.less, ,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"*.less, <open folders>",
+			"*.less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/less/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/themes",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/themes/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/wp-content/themes/freshops/library/less",
+			"",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_1030up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_1240up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_2x.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_481up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_768up.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_base.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_grid.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_mixins.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_normalize.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/_print.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/ie.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/login.less,/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less/style.less",
+			"/Users/djbeeker/Sites/freshops/webapps/beta/content/themes/freshops/library/less",
+			"<open folders>,<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clearfix",
+			"#logo",
+			"#idot",
+			"oasislifedesign.com",
+			"#logo",
+			"oasislifedesign.com",
+			"resources",
+			"li",
+			");\n",
+			"a:hover .slogan",
+			"#slogan",
+			"slogan",
+			"email",
+			"Lyris Cooper",
+			"text-tran",
+			"btn",
+			"beachbar",
+			"nth-child",
+			".teaser",
+			"h1",
+			".ui-accordion",
+			".ui-accord",
+			"featured",
+			".tease",
+			".sidebar inp",
+			"submit",
+			".sidebar",
+			"submit",
+			"ul",
+			"p",
+			"\"text\"",
+			"myanim",
+			"rgba",
+			"	 ",
+			"eightcol",
+			"oasis_secondary_nav",
+			"footer",
+			"bones",
+			"bones-related-posts",
+			"bones",
+			"oasis_main",
+			"register_sidebar",
+			".poptext",
+			"rol",
+			"role",
+			"enque",
+			"bones",
+			"margin-top: 2.2em;",
+			"header",
+			"#sidebars",
+			"#sidebar_1",
+			"#sidebar1",
+			"sidebar",
+			"header",
+			".format_text img",
+			".menu-oasis-page-nav-container",
+			".menu-oasis",
+			"header .nav",
+			"display:",
+			"display: b",
+			"display:",
+			"1280",
+			".blog_block",
+			".blog-block",
+			".wrap",
+			"after_sidebar",
+			"main_column",
+			".stroked",
+			"#logo",
+			".slogan",
+			"http://www.oasislifedesign.com/wp-content/uploads/beachbar.png",
+			"beachbar",
+			"body",
+			".home",
+			"beachbar",
+			"stroked",
+			"#inner_feature",
+			"header nav",
+			"oasisTaxonomies",
+			"#slog",
+			"#slogan",
+			"2em",
+			"#slog",
+			"clear",
+			".nav li",
+			".nav",
+			"$lato",
+			"$sans-serif",
+			"$lato",
+			"Lato",
+			"sudopdx",
+			"beachbar",
+			"header.header",
+			"oasisl",
+			"http://www.oasislifedesign.com/wp-content/themes/thesis_182/images/",
+			"#main",
+			".hentry",
+			"nav",
+			".nav",
+			".page",
+			"http://www.oasislifedesign.com/content/testimonials",
+			"http://www.oasislifedesign.com",
+			"http://www.oasislifedesign.com/wp-content/themes/thesis_182/custom/images/",
+			"http://www.oasislifedesign.com/wp-content/uploads/water_tile.jpg",
+			"#header",
+			"htt",
+			"http://www.oasislifedesign.com/wp-content/themes/thesis_182/custom/images/",
+			".custom ",
+			"http://www.sudopdx.net/oasis/wp-content/themes/thesis_182/custom/images/",
+			"body",
+			"linear-gradient(,#fff);",
+			".custom ",
+			"#container",
+			"else:",
+			"else :",
+			":",
+			"bones_",
+			"'bones",
+			"bones",
+			"'bones",
+			"function bones_",
+			"'bones_",
+			"bones_ahoy",
+			"bones_main_nav",
+			"bonestheme",
+			"rsblawtheme",
+			"http://www.oasislifedesign.com/wp-content/themes/thesis_182",
+			"http://www.oasislifedesign.com"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".slogan",
+			"screenshotreveal	",
+			"	",
+			"oasis_blog_subnav",
+			"oasis",
+			"oasis-related-posts",
+			".sidebar",
+			"img",
+			"header nav",
+			"../library/images/beachbar.png",
+			"$sans",
+			"../images/",
+			"http://www.oasislifedesign.com/testimonials",
+			"../images/",
+			"../images/water_tile.jpg",
+			"../images/",
+			"",
+			"../images/",
+			"linear-gradient(#999,#fff);",
+			"",
+			"oasis_",
+			"'oasis",
+			"function oasis_",
+			"'oasis_",
+			"oasis_ahoy",
+			"oasis_main_nav",
+			"oasistheme",
+			"} //endif",
+			"else {",
+			"oasistheme",
+			"library/images",
+			"have_posts()) {",
+			"<?php } //endwhile;",
+			"if (have_posts()) {\nwhile (have_posts()) {\n							the_post(); ?>",
+			"if (have_posts()) {\n						",
+			"'oasistheme'",
+			"} //endwhile",
+			"->have_posts())  {",
+			"{}",
+			">",
+			"						<?php }",
+			"</dt><dd>\n									",
+			"</dd></dl>",
+			"order",
+			"animOptions0",
+			"animOptions01",
+			"#order",
+			"#menu-order",
+			"@hops-orange",
+			"@semi-black",
+			"",
+			"check_ele_cookie",
+			"menu",
+			"tabs",
+			"rel_external",
+			"order",
+			"var ",
+			"#menu-main-nav",
+			"#menu-order",
+			"#menu-main-nav",
+			"orderUL",
+			"tabsOptions",
+			"killCookie",
+			"setCookie",
+			"$relExternal",
+			"speed03",
+			"speed02",
+			"speed01",
+			"$animOptions01",
+			"$AnimOptions01",
+			"cookieDomain",
+			"cookiePath",
+			"cookieMenu",
+			"checkEle",
+			"clickID",
+			"ignoreCookie",
+			"checkEleCookie",
+			"menuFire",
+			"menuEle",
+			"menuType",
+			"menuID",
+			"menuClicker",
+			"ignoreCookieRel",
+			"bones_theme",
+			"@black;",
+			"@black",
+			"@near-black",
+			"@hops-olive",
+			"@green-x-dark",
+			"@hops-green",
+			"Author: Ben Beekman",
+			"<th scope=\"col\">",
+			"",
+			"th>",
+			"td>",
+			"@hops-",
+			"@hops",
+			"rhizome",
+			"Rhizomes",
+			"Rhizome",
+			"Hop",
+			"hop",
+			"hops",
+			"Hop",
+			"hop",
+			"rhizome",
+			"Rhizome",
+			"Rhizomes",
+			"Hop",
+			"hop_variety",
+			"Hop Varieties",
+			"Author: Ben Beekman",
+			"Site Name: Freshops Theme",
+			"@freshops-blue",
+			"@freshops-orange"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 190.0
+	},
+	"pinned_build_system": "",
+	"project": "beekman-theme.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"base",
+				"library/scss/breakpoints/_base.scss"
+			],
+			[
+				"pend",
+				"library/scss/pending.scss"
+			],
+			[
+				"sty",
+				"library/scss/style.scss"
+			],
+			[
+				"style.s",
+				"library/scss/style.scss"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"mixin",
+				"library/scss/partials/_mixins.scss"
+			],
+			[
+				"foot",
+				"footer.php"
+			],
+			[
+				"mix",
+				"library/scss/partials/_mixins.scss"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"fun",
+				"functions.php"
+			],
+			[
+				"js",
+				"library/js/scripts.js"
+			],
+			[
+				"bas",
+				"library/scss/breakpoints/_base.scss"
+			],
+			[
+				"mixi",
+				"wp-content/themes/rsblaw/library/less/_mixins.less"
+			],
+			[
+				"76",
+				"content/themes/freshops/library/less/_768up.less"
+			],
+			[
+				"funct",
+				"content/themes/freshops/functions.php"
+			],
+			[
+				"7",
+				"content/themes/freshops/library/less/_768up.less"
+			],
+			[
+				"base.",
+				"content/themes/freshops/library/less/_base.less"
+			],
+			[
+				"768",
+				"content/themes/freshops/library/less/_768up.less"
+			],
+			[
+				"base.less",
+				"content/themes/freshops/library/less/_base.less"
+			],
+			[
+				"mixins",
+				"content/themes/freshops/library/less/_mixins.less"
+			],
+			[
+				"functions.php",
+				"content/themes/freshops/functions.php"
+			],
+			[
+				"functi",
+				"content/themes/freshops/functions.php"
+			],
+			[
+				"head",
+				"wp-content/themes/freshops/header.php"
+			],
+			[
+				"func",
+				"wp-content/themes/freshops/functions.php"
+			],
+			[
+				"function",
+				"wp-content/themes/freshops/functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 313.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

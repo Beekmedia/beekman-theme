@@ -2731,11 +2731,22 @@ article {
   line-height: 125%;
   font-size: 0.875rem; }
 
-.home #gallery-2 > figure:nth-child(1), #gallery-2 > figure:nth-child(2) {
+.home #gallery-2 {
+  width: 100% !important;
+  height: auto !important; }
+
+.home #gallery-2 .gallery-item {
+  position: relative !important;
+  float: left !important;
+  display: inline !important;
+  top: 0 !important;
+  left: 0 !important; }
+
+.home #gallery-2 > .gallery-item:nth-child(1), #gallery-2 > .gallery-item:nth-child(2) {
   display: none;
   visibility: hidden; }
 
-.home #gallery-1 > figure:nth-child(4), #gallery-1 > figure:nth-child(5) {
+.home #gallery-1 > .gallery-item:nth-child(4), #gallery-1 > .gallery-item:nth-child(5) {
   display: inline-block;
   visibility: visible; }
 
@@ -2743,18 +2754,18 @@ article {
   display: none;
   visibility: hidden; }
 
-.home #gallery-2 figure {
+.home #gallery-2 .gallery-item {
   margin: 0 8px 0.5rem 0; }
 
-.home figure {
-  float: left; }
+.home .gallery-item {
+  float: left !important; }
 
-.home #gallery-1 > figure {
-  margin: 0 0 10px 0; }
+.home #gallery-1 > .gallery-item {
+  margin: 0 0 10px; }
 
-.home #gallery-1 > figure > div > img {
-  width: 100%;
-  height: auto; }
+.home #gallery-1 > .gallery-item > .gallery-icon > img {
+  width: 100% !important;
+  height: auto !important; }
 
 /*********************
 GENERAL STYLES
@@ -4171,11 +4182,11 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .home #gallery-1 > figure:nth-child(4), .home #gallery-1 > figure:nth-child(5) {
+  .home #gallery-1 > .gallery-item:nth-child(4), .home #gallery-1 > .gallery-item:nth-child(5) {
     display: none;
     visibility: hidden; }
 
-  .home #gallery-2 > figure:nth-child(1) {
+  .home #gallery-2 > .gallery-item:nth-child(1) {
     display: inline-block;
     visibility: visible; }
 
@@ -4196,22 +4207,19 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
-  .home #gallery-2 > figure:nth-child(2) {
+  .home #gallery-2 > .gallery-item:nth-child(2) {
     display: inline-block;
     visibility: visible; }
 
-  .home #gallery-1 > figure:nth-child(3) {
+  .home #gallery-1 > .gallery-item:nth-child(3), .home #gallery-1 > .gallery-item:nth-child(4) {
     display: none;
     visibility: hidden; }
 
-  .wrap {
-    width: 1268px; }
+  .home #gallery-1 {
+    height: auto !important; }
 
-  .home .d-2of7 {
-    width: 300px; }
-  .home .d-5of7 {
-    padding-right: 0.75em;
-    width: 76.329%; } }
+  .wrap {
+    width: 1268px; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

@@ -48,6 +48,8 @@
 							<?php endif; ?>
 						</div>
 					<?php get_sidebar('home'); ?><!--  homepage sidebar is floated to left -->
+          </div>
+                      <div class="clearfix"></div>
 					<?php get_template_part('library/after_content', 'home'); ?>
 				</div>
 
