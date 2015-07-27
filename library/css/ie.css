@@ -96,8 +96,8 @@ whatever you use in here.
 
 ******************************************************************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Beekman Theme
+Author: Ben Beekman
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -117,9 +117,6 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
-/*********************
-NAVIGATION STYLES
-*********************/
 .slogan:hover {
   color: rgba(215, 255, 255, 0.9);
   text-shadow: 0px 0px 5px RGBA(186, 253, 49, 0.7); }
@@ -171,9 +168,13 @@ check your menus here. do they look good?
 do they need tweaking?
 */
 /* end .footer-links */
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(5) {
+  display: none;
+  visibility: hidden; }
+
 /******************************************************************
-Site Name:
-Author:
+Site Name: Beekman Theme
+Author: Ben Beekman
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -187,18 +188,13 @@ come into play. Have fun!
 .header {
   height: 5.6rem; }
 
-.home #gallery-1 {
-  margin: 0;
-  padding: 0; }
-
 .slogan {
   padding-right: 0;
   float: none;
   width: 69%;
-  line-height: 1.4rem;
+  line-height: 1;
   margin-left: 16.4rem;
   font-size: 1.7rem;
-  line-height: 1;
   color: #37e8fd;
   display: inline-block;
   position: relative;
@@ -365,9 +361,13 @@ mobile. Make sure to double check these!
   */ }
 
 /* end .footer-links */
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
+  display: none;
+  visibility: hidden; }
+
 /******************************************************************
-Site Name:
-Author:
+Site Name: Beekman Theme
+Author: Ben Beekman
 
 Stylesheet: Desktop Stylsheet
 
@@ -375,11 +375,12 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-.home #gallery-1 > .gallery-item:nth-child(4), .home #gallery-1 > .gallery-item:nth-child(5) {
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(5),
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4) {
   display: none;
   visibility: hidden; }
 
-.home #gallery-2 > .gallery-item:nth-child(1) {
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
   display: inline-block;
   visibility: visible; }
 

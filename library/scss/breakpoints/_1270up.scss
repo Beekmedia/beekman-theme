@@ -1,35 +1,43 @@
-/******************************************************************
-Site Name:
-Author:
+//******************************************************************
+// Site Name: Beekman Theme
+// Author: Ben Beekman
 
-Stylesheet: Super Large Monitor Stylesheet
+// Stylesheet: Super Large Monitor Stylesheet
 
-You can add some advanced styles here if you like. This kicks in
-on larger screens.
+// You can add some advanced styles here if you like. This kicks in
+// on larger screens.
+//******************************************************************/
 
-******************************************************************/
 //at this size we can fit one more horizontal image
-.home #gallery-2 > .gallery-item:nth-child(2) {
-	display: inline-block;
-	visibility: visible;
-}
-//hide one more vertical image
-.home #gallery-1 > .gallery-item:nth-child(3), .home #gallery-1 > .gallery-item:nth-child(4){
-	display: none;
-	visibility: hidden;
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4),
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(5) {
+  display: inline-block;
+  visibility: visible;
 }
 
-.home #gallery-1 {height: auto !important;}
-.wrap {
-  width: 1268px;
+//hide one more vertical image
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(3),
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4) {
+  display: none;
+  visibility: hidden;
 }
 
 .home {
-	.d-2of7 {
-		// width: 300px;
-	}
-	.d-5of7 {
-		// padding-right: 0.75em;
-		// width: 76.329%;
-	}
+
+  .wrap {
+    width: 99%;
+  }
+
+  #gallery-1 {
+    height: auto; //!important;
+}
+
+  .d-2of7 {
+        // width: 300px;
+  }
+
+  .d-5of7 {
+    // padding-right: 0.75em;
+    // width: 76.329%;
+  }
 }

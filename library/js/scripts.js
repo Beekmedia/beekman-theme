@@ -105,10 +105,13 @@ var timeToWaitForLast = 2000;
  * Put all your regular jQuery in here.
  */
  jQuery(document).ready(function($) {
+ 	//mobile menus for w > 768px
+ 	jQuery('header nav').meanmenu({
+ 		meanScreenWidth:"768"
+ 	});
 
   /*
    * Let's fire off the gravatar function
-   * You can remove this if you don't need it
    */
    loadGravatars();
 

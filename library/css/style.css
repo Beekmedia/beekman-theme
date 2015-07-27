@@ -1,8 +1,9 @@
+@import url("http: //fonts.googleapis.com/css?family=Play");
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Play);
 @import url(http://fonts.googleapis.com/css?family=Baumans);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Play);
+@import url("http: //fonts.googleapis.com/css?family=Play");
 /*! Made with beekman: http://themble.com/beekman :) */
 /******************************************************************
 Site Name:
@@ -2705,67 +2706,44 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 /******************************************************************
-Site Name: BenBeekman.com
+Site Name: Beekman Theme
 Author: Ben Beekman
 
 Stylesheet: Base Mobile Stylesheet
 
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
+Everything here will be loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylesheet and will be used across all viewports.
 
 ******************************************************************/
-article.post-212 > header {
-  display: none;
-  visibility: false; }
-
 article {
-  font-size: 0.875rem; }
+  font-size: .875rem; }
+  article.post-212 > header {
+    display: none;
+    visibility: false; }
 
 /* Remove all styling from Galleries. This will allow Masonry to work a bit better. Only available on WP >= 3.9 since it requires HTML5 <figure> */
 .gallery {
   margin: 1.5em auto; }
 
 .gallery-caption {
-  line-height: 125%;
-  font-size: 0.875rem; }
+  font-size: .875rem;
+  line-height: 125%; }
 
-.home #gallery-2 {
-  width: 100% !important;
-  height: auto !important; }
-
-.home #gallery-2 .gallery-item {
-  position: relative !important;
-  float: left !important;
-  display: inline !important;
-  top: 0 !important;
-  left: 0 !important; }
-
-.home #gallery-2 > .gallery-item:nth-child(1), #gallery-2 > .gallery-item:nth-child(2) {
+.home header.article-header {
   display: none;
   visibility: hidden; }
-
-.home #gallery-1 > .gallery-item:nth-child(4), #gallery-1 > .gallery-item:nth-child(5) {
-  display: inline-block;
-  visibility: visible; }
-
 .home figcaption {
   display: none;
   visibility: hidden; }
 
-.home #gallery-2 .gallery-item {
-  margin: 0 8px 0.5rem 0; }
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4),
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(5) {
+  display: inline-block;
+  visibility: visible; }
 
-.home .gallery-item {
-  float: left !important; }
-
-.home #gallery-1 > .gallery-item {
-  margin: 0 0 10px; }
-
-.home #gallery-1 > .gallery-item > .gallery-icon > img {
-  width: 100% !important;
-  height: auto !important; }
+.home .su-custom-gallery-slide {
+  height: auto;
+  max-width: 98%; }
 
 /*********************
 GENERAL STYLES
@@ -2774,32 +2752,32 @@ GENERAL STYLES
   font-size: 1rem; }
 
 p {
-  font-size: 0.875rem; }
+  font-size: 1em; }
 
 #container > nav > .top-nav {
-  position: relative;
-  top: 1rem;
-  right: 1rem;
-  z-index: 999999;
   line-height: 1;
-  margin-left: 15rem; }
+  margin-left: 15rem;
+  position: relative;
+  right: 1rem;
+  top: 1rem;
+  z-index: 999999; }
   #container > nav > .top-nav li {
     display: inline;
     float: left; }
     #container > nav > .top-nav li a {
-      color: #edfec9;
       border-radius: 1rem;
+      color: #edfec9;
       font-size: 1rem;
-      padding: .015rem 0.5rem; }
+      padding: .015rem .5rem; }
       #container > nav > .top-nav li a:active, #container > nav > .top-nav li a:hover {
         background-color: #3d4553; }
 
 body {
+  background-color: #323944;
+  color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1.5;
-  color: white;
-  background-color: #323944;
   -webkit-font-smoothing: antialiased; }
 
 #logo {
@@ -2811,62 +2789,16 @@ body {
       font-size: 2rem; }
 
 #logo a, #logo a:visited {
-  font-family: 'Play', sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.4rem;
   color: #fff;
+  font-family: 'Play', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.4rem;
   text-shadow: rgba(0, 0, 0, 0.4) 8px 8px 0; }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-.home header.article-header {
-  display: none;
-  visibility: hidden; }
-
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
-/*********************
-LAYOUT & GRID STYLES
-*********************/
 .wrap {
-  width: 96%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 96%; }
 
 /*********************
 LINK STYLES
@@ -2879,9 +2811,9 @@ a, a:visited {
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #defe9b; }
   a:link, a:visited:link {
-    /*
+    	/*
     this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
+    so it basically works like the : hover selector
     for mobile devices.
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
@@ -2889,15 +2821,28 @@ a, a:visited {
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  text-rendering: optimizelegibility;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
   font-weight: 500;
-  /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
-  /* removing text decoration from all headline links */ }
-  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+  text-rendering: optimizelegibility; }
+  h1 a,
+  .h1 a,
+  h2 a,
+  .h2 a,
+  h3 a,
+  .h3 a,
+  h4 a,
+  .h4 a,
+  h5 a,
+  .h5 a {
     text-decoration: none; }
 
 h1, .h1 {
@@ -2905,12 +2850,12 @@ h1, .h1 {
   line-height: 1.333em; }
 
 .page-title {
-  padding: 0 0.5rem 0 0.5rem; }
+  padding: 0 .5rem 0 .5rem; }
 
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  margin-bottom: .375em; }
 
 h3, .h3 {
   font-size: 1.125rem; }
@@ -2920,178 +2865,177 @@ h4, .h4 {
   font-weight: 700; }
 
 h5, .h5 {
-  font-size: 0.846em;
+  font-size: .846em;
+  letter-spacing: 2px;
   line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
+  text-transform: uppercase; }
 
 /*********************
 HEADER STYLES
 *********************/
 .slogan {
   clear: both;
+  color: #37e8fd;
+  display: inline-block;
   float: left;
+  font-family: 'Play',sans-serif;
   font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1rem;
+  overflow: visible;
+  padding-left: .7rem;
   padding-right: 5.4rem;
   padding-top: 5.2rem;
-  padding-left: 0.7rem;
-  position: absolute;
-  display: inline-block;
-  overflow: visible;
-  line-height: 1rem;
-  color: #37e8fd;
-  font-family: "Play",sans-serif;
-  font-style: italic;
-  font-weight: bold; }
+  position: absolute; }
 
 .header {
-  height: 6.6rem;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: -moz-linear-gradient top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.2)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#0dffffff',GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#0dffffff',GradientType=0 );
+  height: 6.6rem; }
 
-@keyframes "ben_flicker" {
+@keyframes 'ben_flicker' {
   0% {
-    color: rgba(0, 0, 0, 0.7);
-    text-shadow: 0px 0px 2px rgba(214, 255, 255, 0.1);
-    -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 2px rgba(214, 255, 255, 0.1);
     transform: scale(1.5); }
 
   100% {
-    color: rgba(55, 232, 253, 0.75);
-    text-shadow: 0px 0px 7px rgba(214, 255, 255, 0.9);
-    -webkit-transform: scale(1);
     -moz-transform: scale(1);
-    -o-transform: scale(1);
     -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    color: rgba(55, 232, 253, 0.75);
+    text-shadow: 0 0 7px rgba(214, 255, 255, 0.9);
     transform: scale(1); } }
 
 @-moz-keyframes ben_flicker {
   0% {
-    color: rgba(0, 0, 0, 0.7);
-    text-shadow: 0px 0px 2px rgba(214, 255, 255, 0.1);
     -moz-transform: scale(1.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 2px rgba(214, 255, 255, 0.1);
     transform: scale(1.5); }
 
   100% {
-    color: rgba(55, 232, 253, 0.75);
-    text-shadow: 0px 0px 7px rgba(214, 255, 255, 0.9);
     -moz-transform: scale(1);
+    color: rgba(55, 232, 253, 0.75);
+    text-shadow: 0 0 7px rgba(214, 255, 255, 0.9);
     transform: scale(1); } }
 
-@-webkit-keyframes "ben_flicker" {
+@-webkit-keyframes 'ben_flicker' {
   0% {
-    color: rgba(0, 0, 0, 0.7);
-    text-shadow: 0px 0px 2px rgba(214, 255, 255, 0.1);
     -webkit-transform: scale(1.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 2px rgba(214, 255, 255, 0.1);
     transform: scale(1.5); }
 
   100% {
-    color: rgba(55, 232, 253, 0.75);
-    text-shadow: 0px 0px 7px rgba(214, 255, 255, 0.9);
     -webkit-transform: scale(1);
+    color: rgba(55, 232, 253, 0.75);
+    text-shadow: 0 0 7px rgba(214, 255, 255, 0.9);
     transform: scale(1); } }
 
-@-ms-keyframes "ben_flicker" {
+@-ms-keyframes 'ben_flicker' {
   0% {
-    color: rgba(0, 0, 0, 0.7);
-    text-shadow: 0px 0px 2px rgba(214, 255, 255, 0.1);
     -ms-transform: scale(1.5);
-    transform: scale(1.5); }
-
-  100% {
-    color: rgba(55, 232, 253, 0.75);
-    text-shadow: 0px 0px 7px rgba(214, 255, 255, 0.9);
-    -ms-transform: scale(1);
-    transform: scale(1); } }
-
-@-o-keyframes "ben_flicker" {
-  0% {
     color: rgba(0, 0, 0, 0.7);
-    text-shadow: 0px 0px 2px rgba(214, 255, 255, 0.1);
-    -o-transform: scale(1.5);
+    text-shadow: 0 0 2px rgba(214, 255, 255, 0.1);
     transform: scale(1.5); }
 
   100% {
+    -ms-transform: scale(1);
     color: rgba(55, 232, 253, 0.75);
-    text-shadow: 0px 0px 7px rgba(214, 255, 255, 0.9);
-    -o-transform: scale(1);
+    text-shadow: 0 0 7px rgba(214, 255, 255, 0.9);
     transform: scale(1); } }
 
-@keyframes "beekman_fade" {
+@-o-keyframes 'ben_flicker' {
+  0% {
+    -o-transform: scale(1.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 2px rgba(214, 255, 255, 0.1);
+    transform: scale(1.5); }
+
+  100% {
+    -o-transform: scale(1);
+    color: rgba(55, 232, 253, 0.75);
+    text-shadow: 0 0 7px rgba(214, 255, 255, 0.9);
+    transform: scale(1); } }
+
+@keyframes 'beekman_fade' {
   0% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 68px #a6c6e8; }
+    text-shadow: 0 0 68px #a6c6e8; }
 
   42% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 27px #82e51a; }
+    text-shadow: 0 0 27px #82e51a; }
 
   100% {
     color: rgba(186, 253, 49, 0.9);
-    text-shadow: 0px 4px 28px #f2ea3d; } }
+    text-shadow: 0 4px 28px #f2ea3d; } }
 
 @-moz-keyframes beekman_fade {
   0% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 68px #a6c6e8; }
+    text-shadow: 0 0 68px #a6c6e8; }
 
   42% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 27px #82e51a; }
+    text-shadow: 0 0 27px #82e51a; }
 
   100% {
     color: rgba(186, 253, 49, 0.9);
-    text-shadow: 0px 4px 28px #f2ea3d; } }
+    text-shadow: 0 4px 28px #f2ea3d; } }
 
-@-webkit-keyframes "beekman_fade" {
+@-webkit-keyframes 'beekman_fade' {
   0% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 68px #a6c6e8; }
+    text-shadow: 0 0 68px #a6c6e8; }
 
   42% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 27px #82e51a; }
+    text-shadow: 0 0 27px #82e51a; }
 
   100% {
     color: rgba(186, 253, 49, 0.9);
-    text-shadow: 0px 4px 28px #f2ea3d; } }
+    text-shadow: 0 4px 28px #f2ea3d; } }
 
-@-ms-keyframes "beekman_fade" {
+@-ms-keyframes 'beekman_fade' {
   0% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 68px #a6c6e8; }
+    text-shadow: 0 0 68px #a6c6e8; }
 
   42% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 27px #82e51a; }
+    text-shadow: 0 0 27px #82e51a; }
 
   100% {
     color: rgba(186, 253, 49, 0.9);
-    text-shadow: 0px 4px 28px #f2ea3d; } }
+    text-shadow: 0 4px 28px #f2ea3d; } }
 
-@-o-keyframes "beekman_fade" {
+@-o-keyframes 'beekman_fade' {
   0% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 68px #a6c6e8; }
+    text-shadow: 0 0 68px #a6c6e8; }
 
   42% {
     color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0px 0px 27px #82e51a; }
+    text-shadow: 0 0 27px #82e51a; }
 
   100% {
     color: rgba(186, 253, 49, 0.9);
-    text-shadow: 0px 4px 28px #f2ea3d; } }
+    text-shadow: 0 4px 28px #f2ea3d; } }
 
-@keyframes "slogan_reveal" {
+@keyframes 'slogan_reveal' {
   0% {
     color: rgba(0, 0, 0, 0); }
 
@@ -3111,7 +3055,7 @@ HEADER STYLES
   100% {
     color: #dddddd; } }
 
-@-webkit-keyframes "slogan_reveal" {
+@-webkit-keyframes 'slogan_reveal' {
   0% {
     color: rgba(0, 0, 0, 0); }
 
@@ -3121,7 +3065,7 @@ HEADER STYLES
   100% {
     color: #dddddd; } }
 
-@-ms-keyframes "slogan_reveal" {
+@-ms-keyframes 'slogan_reveal' {
   0% {
     color: rgba(0, 0, 0, 0); }
 
@@ -3131,7 +3075,7 @@ HEADER STYLES
   100% {
     color: #dddddd; } }
 
-@-o-keyframes "slogan_reveal" {
+@-o-keyframes 'slogan_reveal' {
   0% {
     color: rgba(0, 0, 0, 0); }
 
@@ -3146,143 +3090,143 @@ header h1 {
   line-height: 1em; }
 
 header h1 > strong {
-  font-style: normal;
-  z-index: 99;
-  color: #37e8fd;
-  text-shadow: 0px 0px 7px rgba(215, 255, 255, 0.9);
-  font-size: 2rem;
-  text-transform: lowercase;
-  position: absolute;
-  left: 2.3rem;
-  top: 0.75rem;
-  font-weight: bold;
-  -webkit-animation-name: ben_flicker;
-  -moz-animation-name: ben_flicker;
-  -ms-animation-name: ben_flicker;
-  -o-animation-name: ben_flicker;
-  animation-name: ben_flicker;
-  -webkit-animation-duration: 1500ms;
-  -moz-animation-duration: 1500ms;
-  -ms-animation-duration: 1500ms;
-  -o-animation-duration: 1500ms;
-  animation-duration: 1500ms;
-  -webkit-animation-delay: 0ms;
   -moz-animation-delay: 0ms;
-  -ms-animation-delay: 0ms;
-  -o-animation-delay: 0ms;
-  animation-delay: 0ms;
-  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 1500ms;
   -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  -ms-animation-timing-function: ease-in;
-  -o-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-play-state: running;
+  -moz-animation-name: ben_flicker;
   -moz-animation-play-state: running;
-  -ms-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -ms-transition-property: all;
-  transition-property: all;
-  -webkit-transform-origin: left;
+  -moz-animation-timing-function: ease-in;
   -moz-transform-origin: left;
-  -o-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: .5s;
+  -moz-transition-property: all;
   -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
+  -ms-animation-delay: 0ms;
+  -ms-animation-duration: 1500ms;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-name: ben_flicker;
+  -ms-animation-play-state: running;
+  -ms-animation-timing-function: ease-in;
+  -ms-transform-origin: left;
+  -ms-transition-duration: .5s;
+  -ms-transition-property: all;
   -ms-transition-timing-function: ease;
-  transition-timing-function: ease; }
+  -o-animation-delay: 0ms;
+  -o-animation-duration: 1500ms;
+  -o-animation-iteration-count: 1;
+  -o-animation-name: ben_flicker;
+  -o-animation-play-state: running;
+  -o-animation-timing-function: ease-in;
+  -o-transform-origin: left;
+  -o-transition-duration: .5s;
+  -o-transition-property: all;
+  -o-transition-timing-function: ease;
+  -webkit-animation-delay: 0ms;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 1500ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: ben_flicker;
+  -webkit-animation-play-state: running;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-transform-origin: left;
+  -webkit-transition-duration: .5s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  animation-delay: 0ms;
+  animation-duration: 1500ms;
+  animation-iteration-count: 1;
+  animation-name: ben_flicker;
+  animation-play-state: running;
+  animation-timing-function: ease-in;
+  color: #37e8fd;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bold;
+  left: 2.3rem;
+  position: absolute;
+  text-shadow: 0 0 7px rgba(215, 255, 255, 0.9);
+  text-transform: lowercase;
+  top: .75rem;
+  transform-origin: left;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease;
+  z-index: 99; }
 
 header h1 > b {
-  position: absolute;
-  left: .6rem;
-  top: 2.8rem;
-  font-size: 2.9rem;
-  color: #bafd31;
-  text-shadow: 0px 0px 10px #82e51a;
-  z-index: 10;
-  -webkit-animation-name: beekman_fade;
-  -moz-animation-name: beekman_fade;
-  -ms-animation-name: beekman_fade;
-  -o-animation-name: beekman_fade;
-  animation-name: beekman_fade;
-  -webkit-animation-duration: 2.5s;
-  -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
-  -ms-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
   -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -ms-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-play-state: running;
+  -moz-animation-name: beekman_fade;
   -moz-animation-play-state: running;
-  -ms-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -ms-transition-property: all;
-  transition-property: all;
-  -webkit-transform-origin: left;
+  -moz-animation-timing-function: linear;
   -moz-transform-origin: left;
-  -o-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  -ms-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: .7s;
+  -moz-transition-property: all;
   -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
+  -ms-animation-delay: 0s;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-name: beekman_fade;
+  -ms-animation-play-state: running;
+  -ms-animation-timing-function: linear;
+  -ms-transform-origin: left;
+  -ms-transition-duration: .7s;
+  -ms-transition-property: all;
   -ms-transition-timing-function: ease;
-  transition-timing-function: ease; }
+  -o-animation-delay: 0s;
+  -o-animation-duration: 2s;
+  -o-animation-iteration-count: 1;
+  -o-animation-name: beekman_fade;
+  -o-animation-play-state: running;
+  -o-animation-timing-function: linear;
+  -o-transform-origin: left;
+  -o-transition-duration: .7s;
+  -o-transition-property: all;
+  -o-transition-timing-function: ease;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: beekman_fade;
+  -webkit-animation-play-state: running;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform-origin: left;
+  -webkit-transition-duration: .7s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: beekman_fade;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  color: #bafd31;
+  font-size: 2.9rem;
+  left: .6rem;
+  position: absolute;
+  text-shadow: 0 0 10px #82e51a;
+  top: 2.8rem;
+  transform-origin: left;
+  transition-duration: .7s;
+  transition-property: all;
+  transition-timing-function: ease;
+  z-index: 10; }
 
 header h1 b:hover {
-  color: rgba(215, 255, 255, 0.9);
-  -webkit-transform: scale(1.5);
   -moz-transform: scale(1.4);
-  -o-transform: scale(1.4);
   -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -webkit-transform: scale(1.5);
+  color: rgba(215, 255, 255, 0.9);
   transform: scale(1.4); }
 
 header h1 strong:hover {
-  color: rgba(0, 0, 0, 0.7);
-  -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  color: rgba(0, 0, 0, 0.7);
   transform: scale(1.2); }
 
 #container > nav:nth-child(1) {
@@ -3291,13 +3235,13 @@ header h1 strong:hover {
 /**********************************************************************
 Input elements-- forms for contact page
 ***********************************************************************/
-.wpcf7-form-control-wrap input[type="text"] {
-  /* clear:both; */
+.wpcf7-form-control-wrap input[type='text'] {
+  /* clear: both; */
   width: 100%; }
 
 textarea {
-  position: relative;
   display: inline;
+  position: relative;
   width: 100%; }
 
 .your-message {
@@ -3308,25 +3252,25 @@ textarea {
   /* max-width: 60%; */
   width: 100%; }
 
-input[type="submit"] {
-  -moz-transition: -moz-box-shadow 0.2s ease-in-out 0s;
-  border-radius: 8px 8px 8px 8px;
-  box-shadow: 0 8px 0 #1a74a1, 0 15px 20px rgba(0, 0, 0, 0.35);
-  display: inline-block;
-  margin: 0em 0 0 0em;
-  padding: .5em;
-  color: #009DBB;
+input[type='submit'] {
+  -moz-transition: -moz-box-shadow .2s ease-in-out 0s;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#e0f8ff));
   background: -moz-linear-gradient(white, #e0f8ff) repeat scroll 0 0 transparent;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0 8px 0 #1a74a1, 0 15px 20px rgba(0, 0, 0, 0.35);
   clear: right;
+  color: #009dbb;
+  display: inline-block;
   float: right;
   font-size: 1.25em;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 0 0 0;
+  padding: .5em; }
 
 .labels {
   clear: both;
-  float: left;
-  display: inline; }
+  display: inline;
+  float: left; }
 
 /**********************************************************************
 Resume formatting
@@ -3335,14 +3279,14 @@ Resume formatting
   border-bottom: 1px solid #eaedf2; }
 
 .resume section > header {
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid #aaa;
   font-size: 20px;
   font-weight: bold; }
 
 .resume header ul li {
   display: inline;
   margin-bottom: 0;
-  padding: 0px; }
+  padding: 0; }
 
 cite {
   font-style: italic; }
@@ -3359,13 +3303,13 @@ cite {
 
 .resume header ul {
   list-style: none;
-  padding: 0px;
-  margin: 0px; }
+  margin: 0;
+  padding: 0; }
 
 .page .resume .vcard h2 {
   line-height: 1;
-  padding-top: 0px;
-  margin-top: 0px; }
+  margin-top: 0;
+  padding-top: 0; }
 
 .page.resume > h1.page-title {
   display: none;
@@ -3376,11 +3320,11 @@ cite {
   padding: 0; }
 
 .entry-content .resume {
-  position: relative;
-  padding: 0 1% 0 1%; }
+  padding: 0 1% 0 1%;
+  position: relative; }
 
 .resume .hentry .entry-content section header {
-  padding: 1rem 0rem 0.5rem 0rem; }
+  padding: 1rem 0rem .5rem 0rem; }
 
 .location {
   float: right;
@@ -3390,8 +3334,8 @@ cite {
 @media screen and (min-width: 720px) {
   #blog-description {
     font-size: 1.8em;
-    margin-right: 4rem;
-    margin-left: 18rem; }
+    margin-left: 18rem;
+    margin-right: 4rem; }
 
   header nav {
     display: inline-block;
@@ -3401,8 +3345,8 @@ cite {
 @media screen and (min-width: 481px) and (max-width: 719px) {
   #blog-description {
     font-size: 1.3rem;
-    margin-right: 2rem;
-    margin-left: 16rem; } }
+    margin-left: 16rem;
+    margin-right: 2rem; } }
 @media screen and (max-width: 480px) {
   #blog-description {
     display: none;
@@ -3415,14 +3359,15 @@ End resume formatting
   body {
     font-size: 10px; }
 
-  .nav ul#primary_nav li a, .nav-sb_before li a:visited, div.nav-sb_before {
+  .nav ul#primary_nav li a,
+  .nav-sb_before li a:visited, div.nav-sb_before {
     display: none !important;
     visibility: hidden !important; }
 
   .resume header ul li {
     display: inline;
-    padding: 0 0 0 0;
-    margin-bottom: 0px; }
+    margin-bottom: 0;
+    padding: 0 0 0 0; }
 
   cite {
     font-style: italic; }
@@ -3433,8 +3378,8 @@ End resume formatting
     line-height: 10px; }
 
   .nav-primary ul#primary_nav {
-    visibility: hidden !important;
-    display: none !important; }
+    display: none !important;
+    visibility: hidden !important; }
 
   .page .hresume section header,
   #primary_nav li,
@@ -3449,23 +3394,24 @@ End resume formatting
     visibility: hidden; }
 
   .resume .entry-content section header, .resume .entry-content {
-    position: relative;
+    margin: 0;
     padding: 0;
-    margin: 0; }
+    position: relative; }
 
   .nav .page li a {
     display: none;
     visibility: hidden; }
 
   .resume .entry-content header ul {
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
 
   #content {
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
 
-  #primary_nav ul, #primary_nav li a, #primary_nav li a, .nav li a:visited {
+  #primary_nav ul, #primary_nav li a,
+  #primary_nav li a, .nav li a:visited {
     display: none !important;
     visibility: hidden !important; }
 
@@ -3477,15 +3423,17 @@ End resume formatting
     display: none !important;
     visibility: hidden !important; }
 
-  .nav-sb_before ul#primary_nav li a, .nav-sb_before ul#primary_nav li a:visited, .nav-sb_before ul#primary_nav li a:link {
+  .nav-sb_before ul#primary_nav li a,
+  .nav-sb_before ul#primary_nav li a:visited,
+  .nav-sb_before ul#primary_nav li a:link {
     color: #000;
-    font-size: 0.7em;
+    display: none;
+    font-size: .7em;
     font-weight: normal;
     letter-spacing: 1px;
     line-height: 30px;
     padding: 0 8px;
     text-transform: uppercase;
-    display: none;
     visibility: hidden; }
 
   .nav li a, .nav li a:visited {
@@ -3513,19 +3461,19 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
-    /*
+    	/*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
     screen is so small. How you manage your menu should
     depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
+    http: //www.alistapart.com/articles/organizing-mobile/
     */ }
     .nav li a {
-      display: block;
       color: white;
+      display: block;
+      padding: .75em;
       text-decoration: none;
-      padding: 0.75em;
-      /*
+      		/*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in
       the style.scss file where it's relevant. We want to
@@ -3544,14 +3492,14 @@ POSTS & CONTENT STYLES
 
 .hentry {
   background-color: #323944;
+  border: 1px solid #cccccc;
   border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #cccccc; }
+  margin-bottom: 1.5em; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa; }
   .hentry footer {
-    padding: 1.5em;
-    border-top: 0px solid #f8f9fa; }
+    border-top: 0 solid #f8f9fa;
+    padding: 1.5em; }
     .hentry footer p {
       margin: 0; }
 
@@ -3588,22 +3536,22 @@ POSTS & CONTENT STYLES
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
-    width: 100%;
     border: 1px solid #eaedf2;
-    margin-bottom: 1.5em; }
+    margin-bottom: 1.5em;
+    width: 100%; }
     .entry-content table caption {
-      margin: 0 0 7px;
-      font-size: 0.75em;
       color: #9fa6b4;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
+      font-size: .75em;
+      letter-spacing: 1px;
+      margin: 0 0 7px;
+      text-transform: uppercase; }
   .entry-content tr {
     border-bottom: 1px solid #eaedf2; }
     .entry-content tr:nth-child(even) {
       background-color: #f8f9fa; }
   .entry-content td {
-    padding: 7px;
-    border-right: 1px solid #eaedf2; }
+    border-right: 1px solid #eaedf2;
+    padding: 7px; }
     .entry-content td:last-child {
       border-right: 0; }
   .entry-content th {
@@ -3613,16 +3561,16 @@ POSTS & CONTENT STYLES
     .entry-content th:last-child {
       border-right: 0; }
   .entry-content blockquote {
-    margin: 0 0 1.5em 0.75em;
-    padding: 0 0 0 0.75em;
     border-left: 3px solid #2980b9;
+    color: #9fa6b4;
     font-style: italic;
-    color: #9fa6b4; }
+    margin: 0 0 1.5em .75em;
+    padding: 0 0 0 .75em; }
   .entry-content dd {
-    margin-left: 0;
-    font-size: 0.9em;
     color: #787878;
-    margin-bottom: 1.5em; }
+    font-size: .9em;
+    margin-bottom: 1.5em;
+    margin-left: 0; }
   .entry-content img {
     margin: 0 0 1.5em 0; }
   .entry-content .size-auto,
@@ -3630,28 +3578,28 @@ POSTS & CONTENT STYLES
   .entry-content .size-large,
   .entry-content .size-medium,
   .entry-content .size-thumbnail {
-    max-width: 100%;
-    height: auto; }
+    height: auto;
+    max-width: 100%; }
   .entry-content pre {
     background: #323944;
+    border-radius: 3px;
     color: #f8f9fa;
-    font-size: 0.9em;
-    padding: 1.5em;
+    font-size: .9em;
     margin: 0 0 1.5em;
-    border-radius: 3px; }
+    padding: 1.5em; }
 
 /* end .entry-content */
 .wp-caption {
-  max-width: 100%;
   background: #eee;
+  max-width: 100%;
   padding: 5px;
   /* images inside wp-caption */ }
   .wp-caption img {
-    max-width: 100%;
     margin-bottom: 0;
+    max-width: 100%;
     width: 100%; }
   .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
+    font-size: .85em;
     margin: 4px 0 7px;
     text-align: center; }
 
@@ -3672,36 +3620,36 @@ PAGE NAVI STYLES
 .pagination {
   text-align: center; }
   .pagination ul {
-    display: inline-block;
     background-color: white;
-    white-space: nowrap;
-    padding: 0;
+    border-radius: 3px;
     clear: both;
-    border-radius: 3px; }
+    display: inline-block;
+    padding: 0;
+    white-space: nowrap; }
   .pagination li {
-    padding: 0;
-    margin: 0;
-    float: left;
+    border-right: 1px solid #eaedf2;
     display: inline;
-    overflow: hidden;
-    border-right: 1px solid #eaedf2; }
-  .pagination a, .pagination span {
+    float: left;
     margin: 0;
-    text-decoration: none;
-    padding: 0;
-    line-height: 1em;
+    overflow: hidden;
+    padding: 0; }
+  .pagination a, .pagination span {
+    color: #2980b9;
+    display: block;
     font-size: 1em;
     font-weight: normal;
-    padding: 0.75em;
+    line-height: 1em;
+    margin: 0;
     min-width: 1em;
-    display: block;
-    color: #2980b9; }
+    padding: 0;
+    padding: .75em;
+    text-decoration: none; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
       background-color: #2980b9;
       color: white; }
   .pagination .current {
-    cursor: default;
-    color: #5c6b80; }
+    color: #5c6b80;
+    cursor: default; }
     .pagination .current:hover, .pagination .current:focus {
       background-color: white;
       color: #5c6b80; }
@@ -3719,36 +3667,36 @@ COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
 #comments-title {
-  padding: 0.75em;
-  margin: 0;
   border-top: 1px solid #f8f9fa;
+  margin: 0;
+  padding: .75em;
   /* number of comments span */ }
 
 .commentlist {
-  margin: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0; }
 
 .comment {
-  position: relative;
+  border-bottom: 1px solid #f8f9fa;
   clear: both;
   overflow: hidden;
   padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
+  position: relative;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
   /* general comment classes */ }
   .comment .comment-author {
-    padding: 7px;
-    border: 0; }
+    border: 0;
+    padding: 7px; }
   .comment .vcard {
     margin-left: 50px; }
     .comment .vcard cite.fn {
-      font-weight: 700;
-      font-style: normal; }
+      font-style: normal;
+      font-weight: 700; }
     .comment .vcard time {
       display: block;
-      font-size: 0.9em;
+      font-size: .9em;
       font-style: italic; }
       .comment .vcard time a {
         color: #9fa6b4;
@@ -3756,9 +3704,9 @@ COMMENT STYLES
         .comment .vcard time a:hover {
           text-decoration: underline; }
     .comment .vcard .avatar {
-      position: absolute;
+      border-radius: 50%;
       left: 16px;
-      border-radius: 50%; }
+      position: absolute; }
   .comment:last-child {
     margin-bottom: 0; }
   .comment .children {
@@ -3771,8 +3719,8 @@ COMMENT STYLES
     margin-left: 0;
     margin-top: 0; }
   .comment:not(.depth-1) {
-    margin-top: 0;
     margin-left: 7px;
+    margin-top: 0;
     padding: 7px; }
   .comment.odd {
     background-color: white; }
@@ -3782,30 +3730,30 @@ COMMENT STYLES
 /* comment meta */
 /* comment content */
 .comment_content p {
-  margin: 0.7335em 0 1.5em;
   font-size: 1em;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  margin: .7335em 0 1.5em; }
 
 /* end .commentlist .comment_content */
 /* comment reply link */
 .comment-reply-link {
-  font-size: 0.9em;
-  float: right; }
+  float: right;
+  font-size: .9em; }
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
 .comment-edit-link {
+  font-size: .9em;
   font-style: italic;
   margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em; }
+  text-decoration: none; }
 
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa; }
+  border-top: 1px solid #f8f9fa;
+  padding: 1.5em; }
 
 #reply-title {
   margin: 0; }
@@ -3818,12 +3766,12 @@ COMMENT FORM STYLES
     color: #5c6b80; }
 
 .comment-form-comment {
-  margin: 1.5em 0 0.75em; }
+  margin: 1.5em 0 .75em; }
 
 .form-allowed-tags {
-  padding: 1.5em;
   background-color: #f8f9fa;
-  font-size: 0.9em; }
+  font-size: .9em;
+  padding: 1.5em; }
 
 /* comment submit button */
 #submit {
@@ -3838,7 +3786,7 @@ COMMENT FORM STYLES
 /* logged in comments */
 /* allowed tags */
 #allowed_tags {
-  margin: 1.5em 10px 0.7335em 0; }
+  margin: 1.5em 10px .7335em 0; }
 
 /* no comments */
 .nocomments {
@@ -3852,23 +3800,23 @@ SIDEBARS & ASIDES
 
 .no-widgets {
   background-color: #323944;
-  padding: 1.5em;
-  text-align: center;
   border: 1px solid #cccccc;
   border-radius: 2px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  text-align: center; }
 
 /*********************
 FOOTER STYLES
 *********************/
 .footer {
-  clear: both;
   background-color: #323944;
+  clear: both;
   color: #f8f9fa; }
 
 /*
 if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
+http: //www.alistapart.com/articles/organizing-mobile/
 you'll want to style the footer nav
 a bit more in-depth. Remember to keep
 it simple because you'll have to
@@ -3877,7 +3825,7 @@ view.
 */
 /* end .footer-links */
 /*========================================
-=         			   METASLIDER HACKS    		       =
+=                  METASLIDER HACKS              =
 ========================================*/
 /*********************
 legacy code*/
@@ -3889,8 +3837,8 @@ tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Beekman Theme
+  Author: Ben Beekman
   
   Stylesheet: 481px and Up Stylesheet
   
@@ -3910,9 +3858,6 @@ tweeners.
   anymore, so just be aware that if you drop
   them in here, they won't work.
   */
-  /*********************
-  NAVIGATION STYLES
-  *********************/
   .slogan:hover {
     color: rgba(215, 255, 255, 0.9);
     text-shadow: 0px 0px 5px RGBA(186, 253, 49, 0.7); }
@@ -3963,7 +3908,10 @@ tweeners.
   check your menus here. do they look good?
   do they need tweaking?
   */
-  /* end .footer-links */ }
+  /* end .footer-links */
+  .home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(5) {
+    display: none;
+    visibility: hidden; } }
 /*********************
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -3972,8 +3920,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Beekman Theme
+  Author: Ben Beekman
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -3987,18 +3935,13 @@ you can add resource intensive styles.
   .header {
     height: 5.6rem; }
 
-  .home #gallery-1 {
-    margin: 0;
-    padding: 0; }
-
   .slogan {
     padding-right: 0;
     float: none;
     width: 69%;
-    line-height: 1.4rem;
+    line-height: 1;
     margin-left: 16.4rem;
     font-size: 1.7rem;
-    line-height: 1;
     color: #37e8fd;
     display: inline-block;
     position: relative;
@@ -4164,7 +4107,10 @@ you can add resource intensive styles.
     the footer.
     */ }
 
-  /* end .footer-links */ }
+  /* end .footer-links */
+  .home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
+    display: none;
+    visibility: hidden; } }
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -4173,8 +4119,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Beekman Theme
+  Author: Ben Beekman
   
   Stylesheet: Desktop Stylsheet
   
@@ -4182,11 +4128,12 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .home #gallery-1 > .gallery-item:nth-child(4), .home #gallery-1 > .gallery-item:nth-child(5) {
+  .home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(5),
+  .home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4) {
     display: none;
     visibility: hidden; }
 
-  .home #gallery-2 > .gallery-item:nth-child(1) {
+  .home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
     display: inline-block;
     visibility: visible; }
 
@@ -4197,29 +4144,20 @@ LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1270px) {
-  /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Super Large Monitor Stylesheet
-  
-  You can add some advanced styles here if you like. This kicks in
-  on larger screens.
-  
-  ******************************************************************/
-  .home #gallery-2 > .gallery-item:nth-child(2) {
+  .home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4),
+  .home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(5) {
     display: inline-block;
     visibility: visible; }
 
-  .home #gallery-1 > .gallery-item:nth-child(3), .home #gallery-1 > .gallery-item:nth-child(4) {
+  .home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(3),
+  .home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4) {
     display: none;
     visibility: hidden; }
 
+  .home .wrap {
+    width: 99%; }
   .home #gallery-1 {
-    height: auto !important; }
-
-  .wrap {
-    width: 1268px; } }
+    height: auto; } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -4228,8 +4166,8 @@ query for retina AND a certain size if you want. Go Nuts.
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: Beekman Theme
+  Author: Ben Beekman
   
   Stylesheet: Retina Screens & Devices Stylesheet
   
@@ -4238,9 +4176,9 @@ query for retina AND a certain size if you want. Go Nuts.
   place.
   
   ******************************************************************/
-  /* 
+  /*
   
-  EXAMPLE 
+  EXAMPLE
   Let's say you have an image and you need to make sure it looks ok
   on retina screens. Let's say we have an icon which dimension are
   24px x 24px. In your regular stylesheets, it would look something
@@ -4261,10 +4199,10 @@ query for retina AND a certain size if you want. Go Nuts.
   	background-size: 24px 24px;
   }
   
-  So, you would create the same icon, but at double the resolution, meaning 
+  So, you would create the same icon, but at double the resolution, meaning
   it would be 48px x 48px. You'd name it the same, but with a @2x at the end
   (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
+  the original dimensions and you are good to go.
   
   */ }
 /*********************

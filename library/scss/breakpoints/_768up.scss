@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Beekman Theme
+Author: Ben Beekman
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -14,19 +14,14 @@ come into play. Have fun!
 .header {
 	height: 5.6rem;
 }
-.home #gallery-1 {
-	margin: 0;
-	padding: 0;
-}
 
 .slogan { //Front End Engineer
 	padding-right: 0;
 	float:none;
 	width: 69%;
-	line-height: 1.4rem;
+	line-height: 1; //1.4?
 	margin-left: 16.4rem;
 	font-size:1.7rem;
-	line-height: 1;
 	color: $benblue;
 	display: inline-block;
 	position: relative;
@@ -353,3 +348,9 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+
+
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
+	display: none;
+	visibility: hidden;
+}
