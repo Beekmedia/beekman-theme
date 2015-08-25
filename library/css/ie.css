@@ -5,7 +5,7 @@ Author:
 Stylesheet: IE Stylesheet
 
 So instead of using the respond.js file to add media query support
-to IE, we're going to use SASS to create an easily readable css file.
+to IE, we"re going to use SASS to create an easily readable css file.
 Here, we import all the styles the standard stylesheet gets, only
 without the media queries. No need to worry about editing anything!
 
@@ -13,8 +13,8 @@ without the media queries. No need to worry about editing anything!
 /******************************************************************
 IMPORTS & DEPENDENCIES
 Remember, all the BASE styles are called already since IE can
-read those. Below, we need to import only the stuff IE can't
-understand (what's inside the media queries). We also need to
+read those. Below, we need to import only the stuff IE can"t
+understand (what"s inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 ******************************************************************/
 /******************************************************************
@@ -130,13 +130,13 @@ them in here, they won't work.
     /* end current highlighters */ }
     .menu ul li {
       /*
-      plan your menus and drop-downs wisely.
-      */ }
+				plan your menus and drop-downs wisely.
+				*/ }
       .menu ul li a {
         /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/ }
 
 /* end .menu */
 /*********************
@@ -185,56 +185,53 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
+p {
+  font-size: 1em; }
+
+.home .su-custom-gallery:nth-child(1) .su-custom-gallery-slide img {
+  height: auto;
+  max-width: 400px;
+  width: 100%; }
+
+.home .su-custom-gallery:nth-child(2) .su-custom-gallery-slide img {
+  height: auto;
+  max-width: 300px;
+  width: 100%; }
+
+.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
+  display: none;
+  visibility: hidden; }
+
 .header {
   height: 5.6rem; }
 
 .slogan {
-  padding-right: 0;
-  float: none;
-  width: 69%;
-  line-height: 1;
-  margin-left: 16.4rem;
-  font-size: 1.7rem;
+  animation-delay: 5000ms;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-name: slogan_reveal;
+  animation-play-state: running;
+  animation-timing-function: ease-in;
   color: #37e8fd;
   display: inline-block;
-  position: relative;
-  text-align: center;
-  overflow: visible;
-  font-family: "Play",sans-serif;
+  float: none;
+  font-family: 'Play',sans-serif;
+  font-size: 1.7rem;
   font-style: italic;
   font-weight: bold;
+  line-height: 1;
+  margin-left: 16.4rem;
+  overflow: visible;
+  padding-right: 0;
   padding-top: 1.1rem;
-  transition: all 1s ease-in-out 0s;
-  -webkit-animation-name: slogan_reveal;
-  -moz-animation-name: slogan_reveal;
-  -o-animation-name: slogan_reveal;
-  animation-name: slogan_reveal;
-  -webkit-animation-duration: 5000ms;
-  -moz-animation-delay: 5000ms;
-  -o-animation-delay: 5000ms;
-  animation-delay: 5000ms;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in;
-  -moz-animation-timing-function: ease-in;
-  -ms-animation-timing-function: ease-in;
-  -o-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-  -webkit-transition: all ease-in-out 1s;
-  -moz-transition: all ease-in-out 1s;
-  -o-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s; }
+  position: relative;
+  text-align: center;
+  transition: all ease-in-out 1s;
+  width: 69%; }
 
 .slogan:hover {
   color: rgba(215, 255, 255, 0.9);
-  text-shadow: 0px 0px 5px RGBA(186, 253, 49, 0.7);
+  text-shadow: 0 0 5px RGBA(186, 253, 49, 0.7);
   transform: translateY(-10px) scale(1.25, 1.15) rotate(0.2deg); }
 
 /*********************
@@ -264,23 +261,23 @@ NAVIGATION STYLES
     float: left;
     position: relative;
     /*
-    plan your menus and drop-downs wisely.
-    */
+		plan your menus and drop-downs wisely.
+		*/
     /* showing sub-menus */ }
     .nav li a {
       border-bottom: 0;
       /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
       .nav li a:hover, .nav li a:focus {
-        color: white;
+        color: #fff;
         text-decoration: underline; }
     .nav li ul.sub-menu,
     .nav li ul.children {
-      margin-top: 0;
       border: 1px solid #ccc;
       border-top: 0;
+      margin-top: 0;
       position: absolute;
       visibility: hidden;
       z-index: 8999;
@@ -288,24 +285,24 @@ NAVIGATION STYLES
       .nav li ul.sub-menu li,
       .nav li ul.children li {
         /*
-        if you need to go deeper, go nuts
-        just remember deeper menus suck
-        for usability. k, bai.
-        */ }
+			if you need to go deeper, go nuts
+			just remember deeper menus suck
+			for usability. k, bai.
+			*/ }
         .nav li ul.sub-menu li a,
         .nav li ul.children li a {
-          padding-left: 10px;
+          border-bottom: 1px solid #ccc;
           border-right: 0;
           display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
+          padding-left: 10px;
+          width: 180px; }
         .nav li ul.sub-menu li:last-child a,
         .nav li ul.children li:last-child a {
           border-bottom: 0; }
         .nav li ul.sub-menu li ul,
         .nav li ul.children li ul {
-          top: 0;
-          left: 100%; }
+          left: 100%;
+          top: 0; }
     .nav li:hover > ul {
       top: auto;
       visibility: visible; }
@@ -315,61 +312,30 @@ NAVIGATION STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  margin-top: 0em; }
+  margin-top: 0; }
 
 .sidebar.last-col {
   padding-left: 1rem; }
 
 .widgettitle {
   border-bottom: 2px solid #444;
-  margin-bottom: 0.75em; }
+  margin-bottom: .75em; }
 
 .widget {
-  padding: 0;
-  margin: 0 0; }
+  margin: 0;
+  padding: 0; }
   .widget ul li {
-    margin-bottom: 0.75em;
+    margin-bottom: .75em;
     /* deep nesting */ }
     .widget ul li ul {
-      margin-top: 0.75em;
+      margin-top: .75em;
       padding-left: 1em; }
-
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
-  /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */ }
-
-/* end .footer-links */
-.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
-  display: none;
-  visibility: hidden; }
 
 /******************************************************************
 Site Name: Beekman Theme
 Author: Ben Beekman
 
-Stylesheet: Desktop Stylsheet
+Stylesheet: Desktop Stylesheet
 
 This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
@@ -385,15 +351,15 @@ be seen on the Desktop.
   visibility: visible; }
 
 .wrap {
-  width: 1040px; }
+  width: 1020px; }
 
 /*
-you can call the larger styles if you want, but there's really no need
+you can call the larger styles if you want, but there"s really no need
 */
 /******************************************************************
 ADDITIONAL IE FIXES
-These fixes are now ONLY seen by IE, so you don't have to worry
-about using prefixes, although it's best practice. For more info
+These fixes are now ONLY seen by IE, so you don"t have to worry
+about using prefixes, although it"s best practice. For more info
 on using Modernizr classes, check out this link:
 http://www.modernizr.com/docs/
 ******************************************************************/
@@ -410,3 +376,5 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
+
+/*# sourceMappingURL=ie.css.map */

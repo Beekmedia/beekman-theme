@@ -13,3 +13,24 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 
 .phpintel/*
+
+############
+## Grunt
+############
+
+node_modules/
+
+############
+## Bower
+############
+
+bower_components/
+
+############
+## Misc
+############
+
+*.scssc
+library/css/*
+build/
+node_modules/

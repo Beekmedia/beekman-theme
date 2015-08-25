@@ -4,6 +4,6 @@
 =============================================*/
 ?>
 						<div class="alert alert-help">
-							<p><?php _e("Please activate some Widgets for this sidebar.", "beekmantheme");  ?></p>
+							<p><?php _e("Please activate some Widgets for this sidebar.", "beekman-theme");  ?></p>
 						</div>
 <?

@@ -5,7 +5,7 @@
 				<div id="inner-content" class="wrap cf">
 
 					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
-						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'beekmantheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'beekman-theme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -16,21 +16,21 @@
 									<h3 class="search-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
                   <p class="byline vcard">
-                    <?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'beekmantheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+                    <?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'beekman-theme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
                   </p>
 
 								</header>
 
 								<section class="entry-content">
-										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'beekmantheme' ) . '</span>' ); ?>
+										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'beekman-theme' ) . '</span>' ); ?>
 
 								</section>
 
 								<footer class="article-footer">
 
-                  <?php printf( __( 'Filed under: %1$s', 'beekmantheme' ), get_the_category_list(', ') ); ?>
+                  <?php printf( __( 'Filed under: %1$s', 'beekman-theme' ), get_the_category_list(', ') ); ?>
 
-                  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'beekmantheme' ) . '</span> ', ', ', '</p>' ); ?>
+                  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'beekman-theme' ) . '</span> ', ', ', '</p>' ); ?>
 
 								</footer> <!-- end article footer -->
 
@@ -44,13 +44,13 @@
 
 									<article id="post-not-found" class="hentry cf">
 										<header class="article-header">
-											<h1><?php _e( 'Sorry, No Results.', 'beekmantheme' ); ?></h1>
+											<h1><?php _e( 'Sorry, No Results.', 'beekman-theme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Try your search again.', 'beekmantheme' ); ?></p>
+											<p><?php _e( 'Try your search again.', 'beekman-theme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the search.php template.', 'beekmantheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the search.php template.', 'beekman-theme' ); ?></p>
 										</footer>
 									</article>
 

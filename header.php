@@ -21,6 +21,8 @@
 	<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+
+	<style>@import url('http: //fonts.googleapis.com/css?family=Play');</style>
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 			<![endif]-->
@@ -46,7 +48,7 @@
 					<?php wp_nav_menu(array(
     					'container' => false,                           // remove nav container
     					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					'menu' => __( 'The Main Menu', 'beekmantheme' ),  // nav name
+    					'menu' => __( 'The Main Menu', 'beekman-theme' ),  // nav name
     					'menu_class' => 'nav top-nav cf',               // adding custom nav class
     					'theme_location' => 'main-nav',                 // where it's located in the theme
     					'before' => '',                                 // before the menu
@@ -68,5 +70,7 @@
     						<div class="slogan"><?php bloginfo('description'); ?></div>
 
     					</div>
+
+				<?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail(); ?>
 
     				</header>

@@ -10,13 +10,13 @@
 
 							<header class="article-header">
 
-								<h1><?php _e( 'Not What You Were Looking For, 'beekmantheme' ); ?></h1>
+								<h1><?php _e( 'Not What You Were Looking For, 'beekman-theme' ); ?></h1>
 
 							</header>
 
 							<section class="entry-content">
 
-								<p><?php _e( 'The link you were following was not found. Please try searching or browsing to locate it.', 'beekmantheme' ); ?></p>
+								<p><?php _e( 'The link you were following was not found. Please try searching or browsing to locate it.', 'beekman-theme' ); ?></p>
 
 							</section>
 

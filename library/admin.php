@@ -75,7 +75,7 @@ function beekman_rss_dashboard_widget() {
 	else foreach ($items as $item) { ?>
 
 	<h4 style="margin-bottom: 0;">
-		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'j F Y @ g:i a', 'beekmantheme' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
+		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'j F Y @ g:i a', 'beekman-theme' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
 			<?php echo $item->get_title(); ?>
 		</a>
 	</h4>
@@ -87,7 +87,7 @@ function beekman_rss_dashboard_widget() {
 
 // calling all custom dashboard widgets
 function beekman_custom_dashboard_widgets() {
-	wp_add_dashboard_widget( 'beekman_rss_dashboard_widget', __( 'Recently on Themble (Customize on admin.php)', 'beekmantheme' ), 'beekman_rss_dashboard_widget' );
+	wp_add_dashboard_widget( 'beekman_rss_dashboard_widget', __( 'Recently on Themble (Customize on admin.php)', 'beekman-theme' ), 'beekman_rss_dashboard_widget' );
 	/*
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
@@ -134,7 +134,7 @@ you like.
 
 // Custom Backend Footer
 function beekman_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="http://benbeekman.com" target="_blank">Ben Beekman</a></span>.', 'beekmantheme' );
+	_e( '<span id="footer-thankyou">Developed by <a href="http://benbeekman.com" target="_blank">Ben Beekman</a></span>.', 'beekman-theme' );
 }
 
 // adding it to the admin area

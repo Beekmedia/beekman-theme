@@ -1,7 +1,7 @@
 <?php
 /*
-Author: Eddie Machado
-URL: htp://themble.com/beekman/
+Author: Ben Beekman
+URL: http://benbeekman.com/
 
 This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images,
@@ -10,6 +10,8 @@ sidebars, comments, ect.
 
 // LOAD beekman CORE (if you remove this, the theme will break)
 require_once( 'library/beekman.php' );
+
+
 
 // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
 //require_once( 'library/custom-post-type.php' );
@@ -25,7 +27,7 @@ Let's get everything up and running.
 function beekman_ahoy() {
 
   // let's get language support going, if you need it
-  load_theme_textdomain( 'beekmantheme', get_template_directory() . '/library/translation' );
+  load_theme_textdomain( 'beekman-theme', get_template_directory() . '/library/translation' );
 
   // launching operation cleanup
   add_action( 'init', 'beekman_head_cleanup' );
@@ -97,11 +99,10 @@ add_filter( 'image_size_names_choose', 'beekman_custom_image_sizes' );
 
 function beekman_custom_image_sizes( $sizes ) {
 	return array_merge( $sizes, array(
-		'beekman-thumb-600' => __('600px by 150px'),
-		'beekman-thumb-300' => __('300px by 100px'),
+		'beekman-thumb-600' => __('600px by 150px', 'beekman-theme'),
+		'beekman-thumb-300' => __('300px by 100px', 'beekman-theme'),
 	) );
 }
-
 /*
 The function above adds the ability to use the dropdown menu to select
 the new images sizes you have just created from within the media manager
@@ -110,14 +111,21 @@ duplicate one of the lines in the array and name it according to your
 new image size.
 */
 
+
+function my_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+
+add_action( 'admin_init', 'my_theme_add_editor_styles' );
+
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
 function beekman_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'beekmantheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'beekmantheme' ),
+		'name' => __( 'Sidebar 1', 'beekman-theme' ),
+		'description' => __( 'The first (primary) sidebar.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -125,8 +133,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'blog',
-		'name' => __( 'Blog Sidebar', 'beekmantheme' ),
-		'description' => __( 'The blog sidebar.', 'beekmantheme' ),
+		'name' => __( 'Blog Sidebar', 'beekman-theme' ),
+		'description' => __( 'The blog sidebar.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -134,8 +142,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'web',
-		'name' => __( 'Web Sidebar', 'beekmantheme' ),
-		'description' => __( 'The web development page sidebar.', 'beekmantheme' ),
+		'name' => __( 'Web Sidebar', 'beekman-theme' ),
+		'description' => __( 'The web development page sidebar.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -143,8 +151,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'other-work',
-		'name' => __( 'Other Work Sidebar', 'beekmantheme' ),
-		'description' => __( 'Other Work page sidebar.', 'beekmantheme' ),
+		'name' => __( 'Other Work Sidebar', 'beekman-theme' ),
+		'description' => __( 'Other Work page sidebar.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -152,8 +160,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'home',
-		'name' => __( 'Home Page Sidebar', 'beekmantheme' ),
-		'description' => __( 'The home page sidebar.', 'beekmantheme' ),
+		'name' => __( 'Home Page Sidebar', 'beekman-theme' ),
+		'description' => __( 'The home page sidebar.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -161,8 +169,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'home-after',
-		'name' => __( 'After Home Page Content', 'beekmantheme' ),
-		'description' => __( 'A widget banner below the main column of the home page.', 'beekmantheme' ),
+		'name' => __( 'After Home Page Content', 'beekman-theme' ),
+		'description' => __( 'A widget banner below the main column of the home page.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '',
@@ -200,13 +208,13 @@ function beekman_comments( $comment, $args, $depth ) {
 		?>
 		<img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=40" class="load-gravatar avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
 		<?php // end custom gravatar call ?>
-		<?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'beekmantheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'beekmantheme' ),'  ','') ) ?>
-		<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'beekmantheme' )); ?> </a></time>
+		<?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'beekman-theme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'beekman-theme' ),'  ','') ) ?>
+		<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'beekman-theme' )); ?> </a></time>
 
 	  </header>
 	  <?php if ($comment->comment_approved == '0') : ?>
 		<div class="alert alert-info">
-		  <p><?php _e( 'Your comment is awaiting moderation.', 'beekmantheme' ) ?></p>
+		  <p><?php _e( 'Your comment is awaiting moderation.', 'beekman-theme' ) ?></p>
 		</div>
 	  <?php endif; ?>
 	  <section class="comment_content cf">

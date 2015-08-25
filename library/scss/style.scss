@@ -1,21 +1,29 @@
-/*! Made with beekman: http://themble.com/beekman :) */
-
 /******************************************************************
 Site Name:
 Author:
 
 Stylesheet: Main Stylesheet
-
-Here's where the magic happens. Here, you'll see we are calling in
-the separate media queries. The base mobile goes outside any query
-and is called at the beginning, after that we call the rest
-of the styles inside media queries.
-
-Helpful articles on Sass file organization:
-http://thesassway.com/advanced/modular-css-naming-conventions
-
 ******************************************************************/
+//from https://github.com/luetkemj/grunt-for-bones
+@import '../../bower_components/susy/sass/susy';
+@import '../../bower_components/breakpoint-sass/stylesheets/breakpoint';
 
+$susy: (
+  columns: 12,
+  gutters: (2/3),
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  grid-padding: 2em,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: overlay,
+  ),
+);
+
+$wrapper-width: 1600px;
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
@@ -23,24 +31,22 @@ our mixins, functions, and variables that we'll be using across
 the whole project.
 *********************/
 // normalize: http://necolas.github.io/normalize.css/
-@import "partials/normalize";
+@import 'partials/normalize';
 
 // Sass variables
-@import "partials/variables";
+@import 'partials/variables';
 
 // typography
-@import "partials/typography";
+@import 'partials/typography';
 
 // Sass functions
-@import "partials/functions";
+@import 'partials/functions';
 
 // import mixins
-@import "partials/mixins";
+@import 'partials/mixins';
 
 // the grid
-@import "partials/grid";
-
-@import "legacy";
+@import 'partials/grid';
 
 /*********************
 IMPORTING MODULES
@@ -51,13 +57,13 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
 
 // alert boxes
-@import "modules/alerts";
+@import 'modules/alerts';
 
 // buttons
-@import "modules/buttons";
+@import 'modules/buttons';
 
 // forms (inputs & labels)
-@import "modules/forms";
+@import 'modules/forms';
 
 /*********************
 BASE (MOBILE) SIZE
@@ -67,7 +73,7 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 
 // styles in base.scss
-@import "breakpoints/base";
+@import 'breakpoints/base';
 
 /*********************
 legacy code*/
@@ -82,7 +88,7 @@ tweeners.
 @media only screen and (min-width: 481px) {
 
 	// styles in 481up.scss
-	@import "breakpoints/481up";
+	@import 'breakpoints/481up';
 
 } // end of media query
 
@@ -95,7 +101,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: 768px) {
 
 	// styles in 768up.scss
-	@import "breakpoints/768up";
+	@import 'breakpoints/768up';
 
 } // end of media query
 
@@ -108,7 +114,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: 1030px) {
 
 	// styles in 1030up.scss
-	@import "breakpoints/1030up";
+	@import 'breakpoints/1030up';
 
 } // end of media query
 
@@ -119,10 +125,16 @@ This is for the larger monitors and possibly full screen viewers.
 @media only screen and (min-width: 1270px) {
 
 	// styles in 1240up.scss
-	@import "breakpoints/1270up";
+	@import 'breakpoints/1270up';
 
 } // end of media query
 
+@media only screen and (min-width: 1366px) {
+
+	// styles in 1366up.scss
+	@import 'breakpoints/1366up';
+
+} // end of media query
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -134,7 +146,7 @@ query for retina AND a certain size if you want. Go Nuts.
        only screen and (min-device-pixel-ratio: 1.5) {
 
 	// styles in 2x.scss
-	@import "breakpoints/2x";
+	@import 'breakpoints/2x';
 
 } // end of media query
 
@@ -147,6 +159,6 @@ be set to display none.
 @media print {
 
 	// styles in print.scss
-	@import "partials/print";
+	@import 'partials/print';
 
 }

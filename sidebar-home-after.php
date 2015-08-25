@@ -13,7 +13,7 @@
 						?>
 
 						<div class="no-widgets">
-							<p><?php _e( 'Add some widgets!', 'beekmantheme' );  ?></p>
+							<p><?php _e( 'Add some widgets!', 'beekman-theme' );  ?></p>
 						</div>
 
 					<?php endif; ?>

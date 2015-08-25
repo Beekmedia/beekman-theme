@@ -14,7 +14,7 @@
 
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline vcard">
-										<?php printf( __( 'Posted', 'beekmantheme' ) . ' <time class="updated" datetime="%1$s" pubdate>%2$s</time> ' . __('by', 'beekmantheme' ) . ' <span class="author">%3$s</span>', get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+										<?php printf( __( 'Posted', 'beekman-theme' ) . ' <time class="updated" datetime="%1$s" pubdate>%2$s</time> ' . __('by', 'beekman-theme' ) . ' <span class="author">%3$s</span>', get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
 									</p>
 
 								</header>
@@ -25,13 +25,13 @@
 
 								<footer class="article-footer cf">
 									<p class="footer-comment-count">
-										<?php comments_number( __( '<span>No</span> Comments', 'beekmantheme' ), __( '<span>One</span> Comment', 'beekmantheme' ), _n( '<span>%</span> Comments', '<span>%</span> Comments', get_comments_number(), 'beekmantheme' ) );?>
+										<?php comments_number( __( '<span>No</span> Comments', 'beekman-theme' ), __( '<span>One</span> Comment', 'beekman-theme' ), _n( '<span>%</span> Comments', '<span>%</span> Comments', get_comments_number(), 'beekman-theme' ) );?>
 									</p>
 
 
-                 	<?php printf( '<p class="footer-category">' . __('filed under', 'beekmantheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
+                 	<?php printf( '<p class="footer-category">' . __('filed under', 'beekman-theme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
 
-                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'beekmantheme' ) . '</span> ', ', ', '</p>' ); ?>
+                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'beekman-theme' ) . '</span> ', ', ', '</p>' ); ?>
 
 
 								</footer>
@@ -46,13 +46,13 @@
 
 									<article id="post-not-found" class="hentry cf">
 											<header class="article-header">
-												<h1><?php _e( 'Oops, Post Not Found!', 'beekmantheme' ); ?></h1>
+												<h1><?php _e( 'Oops, Post Not Found!', 'beekman-theme' ); ?></h1>
 										</header>
 											<section class="entry-content">
-												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekmantheme' ); ?></p>
+												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekman-theme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the index.php template.', 'beekmantheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the index.php template.', 'beekman-theme' ); ?></p>
 										</footer>
 									</article>
 

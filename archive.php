@@ -8,12 +8,12 @@
 
 							<?php if (is_category()) { ?>
 								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Categorized:', 'beekmantheme' ); ?></span> <?php single_cat_title(); ?>
+									<span><?php _e( 'Posts Categorized:', 'beekman-theme' ); ?></span> <?php single_cat_title(); ?>
 								</h1>
 
 							<?php } elseif (is_tag()) { ?>
 								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Tagged:', 'beekmantheme' ); ?></span> <?php single_tag_title(); ?>
+									<span><?php _e( 'Posts Tagged:', 'beekman-theme' ); ?></span> <?php single_tag_title(); ?>
 								</h1>
 
 							<?php } elseif (is_author()) {
@@ -22,22 +22,22 @@
 							?>
 								<h1 class="archive-title h2">
 
-									<span><?php _e( 'Posts By:', 'beekmantheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
+									<span><?php _e( 'Posts By:', 'beekman-theme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
 
 								</h1>
 							<?php } elseif (is_day()) { ?>
 								<h1 class="archive-title h2">
-									<span><?php _e( 'Daily Archives:', 'beekmantheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
+									<span><?php _e( 'Daily Archives:', 'beekman-theme' ); ?></span> <?php the_time('l, F j, Y'); ?>
 								</h1>
 
 							<?php } elseif (is_month()) { ?>
 									<h1 class="archive-title h2">
-										<span><?php _e( 'Monthly Archives:', 'beekmantheme' ); ?></span> <?php the_time('F Y'); ?>
+										<span><?php _e( 'Monthly Archives:', 'beekman-theme' ); ?></span> <?php the_time('F Y'); ?>
 									</h1>
 
 							<?php } elseif (is_year()) { ?>
 									<h1 class="archive-title h2">
-										<span><?php _e( 'Yearly Archives:', 'beekmantheme' ); ?></span> <?php the_time('Y'); ?>
+										<span><?php _e( 'Yearly Archives:', 'beekman-theme' ); ?></span> <?php the_time('Y'); ?>
 									</h1>
 							<?php } ?>
 
@@ -49,7 +49,7 @@
 
 									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 									<p class="byline vcard"><?php
-										printf(__( 'Posted', 'beekmantheme' ) . ' <time class="updated" datetime="%1$s" pubdate>%2$s</time> ' . __('by', 'beekmantheme' ) . ' <span class="author">%3$s</span> <span class="amp">&</span> ' . __('filed under', 'beekmantheme') .  ' %4$s.', get_the_time('Y-m-j'), get_the_time(__( 'F jS, Y', 'beekmantheme' )), get_the_author_link( get_the_author_meta( 'ID' ) ), get_the_category_list(', '));
+										printf(__( 'Posted', 'beekman-theme' ) . ' <time class="updated" datetime="%1$s" pubdate>%2$s</time> ' . __('by', 'beekman-theme' ) . ' <span class="author">%3$s</span> <span class="amp">&</span> ' . __('filed under', 'beekman-theme') .  ' %4$s.', get_the_time('Y-m-j'), get_the_time(__( 'F jS, Y', 'beekman-theme' )), get_the_author_link( get_the_author_meta( 'ID' ) ), get_the_category_list(', '));
 									?></p>
 
 								</header>
@@ -76,13 +76,13 @@
 
 									<article id="post-not-found" class="hentry cf">
 										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'beekmantheme' ); ?></h1>
+											<h1><?php _e( 'Oops, Post Not Found!', 'beekman-theme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekmantheme' ); ?></p>
+											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekman-theme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'beekmantheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the archive.php template.', 'beekman-theme' ); ?></p>
 										</footer>
 									</article>
 

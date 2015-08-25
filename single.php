@@ -3,7 +3,12 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
-
+					<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+							<?php if(function_exists('bcn_display'))
+							{
+							bcn_display();
+							}?>
+						</div>
 					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -31,13 +36,13 @@
 
 							<article id="post-not-found" class="hentry cf">
 									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'beekmantheme' ); ?></h1>
+										<h1><?php _e( 'Oops, Post Not Found!', 'beekman-theme' ); ?></h1>
 									</header>
 									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekmantheme' ); ?></p>
+										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekman-theme' ); ?></p>
 									</section>
 									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'beekmantheme' ); ?></p>
+											<p><?php _e( 'This is the error message in the single.php template.', 'beekman-theme' ); ?></p>
 									</footer>
 							</article>
 

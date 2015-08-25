@@ -1,0 +1,28 @@
+//******************************************************************
+// Site Name: Beekman Theme
+// Author: Ben Beekman
+
+// Stylesheet: Super Large Monitor Stylesheet
+
+// You can add some advanced styles here if you like. This kicks in
+// on larger screens.
+//******************************************************************/
+p {
+	font-size: 1.14285714286em; //16px
+}
+
+//hide one more vertical image
+.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(3){
+	display: none;
+	visibility: hidden;
+}
+
+.home .su-custom-gallery:nth-child(2) .su-custom-gallery-slide img {
+	height: auto;
+	max-width: 322px;
+}
+
+.wrap {
+	max-width: 1520px;
+	width: 98%;
+}

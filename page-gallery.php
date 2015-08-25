@@ -12,13 +12,6 @@
 
 					<div id="main" class="m-all t-3of3 d-7of7 cf" role="main">
 
-						<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-							<?php if(function_exists('bcn_display'))
-							{
-							bcn_display();
-							}?>
-						</div>
-
 						<div id="main" class="m-all t-all d-all cf" role="main">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

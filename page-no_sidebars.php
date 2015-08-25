@@ -1,15 +1,6 @@
 <?php
 /*
- Template Name: Resume page
- *
- * This is your custom page template. You can create as many of these as you need.
- * Simply name is "page-whatever.php" and in add the "Template Name" title at the
- * top, the same way it is here.
- *
- * When you create your page, you can just select the template and viola, you have
- * a custom page template to call your very own. Your mother would be so proud.
- *
- * For more info: http://codex.wordpress.org/Page_Templates
+ Template Name: No Sidebars
 */
 ?>
 
@@ -19,7 +10,13 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<div id="main" class="m-all t-3of3 d-7of7 cf resume" role="main">
+						<div id="main" class="m-all t-3of3 d-7of7 cf" role="main">
+						<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+							<?php if(function_exists('bcn_display'))
+							{
+							bcn_display();
+							}?>
+						</div>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -32,14 +29,14 @@
 
 									<!-- <p class="byline vcard"> -->
 										<?php
-										// printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'beekmantheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+										// printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'beekman-theme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
 									<!-- </p> -->
 
 
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
-									<div class="alignleft">
+									<div class="fullwidth aligncenter">
 									<?php the_post_thumbnail('medium' ); ?>
 									</div>
 									<?php
@@ -60,7 +57,7 @@
 										 *
 										*/
 										wp_link_pages( array(
-											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'beekmantheme' ) . '</span>',
+											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'beekman-theme' ) . '</span>',
 											'after'       => '</div>',
 											'link_before' => '<span>',
 											'link_after'  => '</span>',
@@ -71,7 +68,7 @@
 
 								<footer class="article-footer">
 
-                  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'beekmantheme' ) . '</span> ', ', ', '</p>' ); ?>
+                  	<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'beekman-theme' ) . '</span> ', ', ', '</p>' ); ?>
 
 								</footer>
 
@@ -83,13 +80,13 @@
 
 									<article id="post-not-found" class="hentry cf">
 											<header class="article-header">
-												<h1><?php _e( 'Oops, Post Not Found!', 'beekmantheme' ); ?></h1>
+												<h1><?php _e( 'Oops, Post Not Found!', 'beekman-theme' ); ?></h1>
 										</header>
 											<section class="entry-content">
-												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekmantheme' ); ?></p>
+												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekman-theme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the page-custom.php template.', 'beekmantheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the page-custom.php template.', 'beekman-theme' ); ?></p>
 										</footer>
 									</article>
 

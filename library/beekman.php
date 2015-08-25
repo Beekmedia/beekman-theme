@@ -127,7 +127,7 @@ function beekman_scripts_and_styles() {
   if (!is_admin()) {
 
 		// modernizr (without media query polyfill)
-  	wp_register_script( 'beekman-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+  	// wp_register_script( 'beekman-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
 		// register main stylesheet
   	wp_register_style( 'beekman-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -145,14 +145,19 @@ function beekman_scripts_and_styles() {
 
 		// enqueue styles and scripts
   	wp_enqueue_script( 'beekman-modernizr' );
+
   	wp_enqueue_style( 'beekman-stylesheet' );
   	wp_enqueue_style( 'beekman-ie-only' );
 
 	$wp_styles->add_data( 'beekman-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'beekman-js' );
+	    wp_register_style('meanmenu', 'http://www.oasislifedesign.com/content/themes/oasis-wp-2/library/css/meanmenu.css', array(), '', 'all' );
 
+     wp_register_script('meanmenu',     'http://www.oasislifedesign.com/content/themes/oasis-wp-2/library/js/libs/jquery.meanmenu.js',          array('jquery'), 1, FALSE);
+    wp_enqueue_style( 'meanmenu' );
+    wp_enqueue_script('meanmenu');
+	wp_enqueue_script( 'beekman-js' );
 	}
 }
 
@@ -167,7 +172,7 @@ function beekman_theme_support() {
 	add_theme_support( 'post-thumbnails' );
 
 	// default thumb size
-	set_post_thumbnail_size(250, 250, true);
+	set_post_thumbnail_size(400, 400, true);
 
 	// wp custom background (thx to @bransonwerner for update)
 	add_theme_support( 'custom-background',
@@ -196,7 +201,6 @@ function beekman_theme_support() {
 			'status',            // a Facebook like status update
 			'video',             // video
 			'audio',             // audio
-			'chat'               // chat transcript
 			)
 	                  );
 
@@ -206,8 +210,8 @@ function beekman_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 	                   array(
-			'main-nav' => __( 'The Main Menu', 'beekmantheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'beekmantheme' ) // secondary nav in footer
+			'main-nav' => __( 'The Main Menu', 'beekman-theme' ),   // main nav in header
+			'footer-links' => __( 'Footer Links', 'beekman-theme' ) // secondary nav in footer
 			)
 	                   );
 } /* end beekman theme support */
@@ -237,7 +241,7 @@ function beekman_related_posts() {
 			<li class="related_post"><a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
 		<?php endforeach; }
 		else { ?>
-		<?php echo '<li class="no_related_post">' . __( 'No Related Posts Yet!', 'beekmantheme' ) . '</li>'; ?>
+		<?php echo '<li class="no_related_post">' . __( 'No Related Posts Yet!', 'beekman-theme' ) . '</li>'; ?>
 		<?php }
 	}
 	wp_reset_postdata();
@@ -282,7 +286,7 @@ function beekman_filter_ptags_on_images($content){
 function beekman_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'beekmantheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'beekmantheme' ) .'</a>';
+	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'beekman-theme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'beekman-theme' ) .'</a>';
 }
 
 

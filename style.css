@@ -1,9 +1,16 @@
 /******************************************************************
-Theme Name: BenBeekman WP
+Theme Name: Beekman Theme
 Theme URI: http://www.benbeekman.com/web
-Description: Ben Beekman's responsive theme for benbeekman.com
+Description: A hand-rolled responsive and semantically sound theme for benbeekman.com
 Author: Ben Beekman
 Author URI: http://www.benbeekman.com
 Version: 1.3B
-Tags: flexible-width, translation-ready, microformats, rtl-language-support
+Tags: responsive-layout, fluid-layout, translation-ready, microformats, rtl-language-support
+
+License: WTFPL
+License URI: http://www.wtfpl.net
 ******************************************************************/
+.sticky {}          /* DO NOT EDIT THIS */
+.gallery-caption {} /* THESE ARE USELESS */
+.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+.screen-reader-text {}
