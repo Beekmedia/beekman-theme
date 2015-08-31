@@ -10,17 +10,20 @@ be seen on the Desktop.
 ******************************************************************/
 
 //at desktop size, we want two fewer vertical images and one more horizontal image
-.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(5),
-.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4) {
-	display: none;
-	visibility: hidden;
+#home-sb .su-custom-gallery  .su-custom-gallery-slide {
+	&:nth-child(4), &:nth-child(5) {
+		display: none;
+	}
 }
 
-.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4) {
-	display: inline-block;
-	visibility: visible;
-}
-
+// #home-sb .su-custom-gallery {
+// 	> .su-custom-gallery-slide {
+// 		&:nth-child(4) {
+// 			display: none;
+// 			visibility: hidden;
+// 		}
+// 	}
+// }
 
 .wrap {
 	width: 1020px;

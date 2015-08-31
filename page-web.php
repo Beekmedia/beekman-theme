@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Project Gallery page
+ Template Name: Section Gallery
 */
 ?>
 

@@ -6,6 +6,7 @@
     "url": "git://github.com/luetkemj/grunt-for-bones.git"
   },
   "devDependencies": {
+    "angular": "^1.4.4",
     "autoprefixer": "^5.2.0",
     "grunt": "latest",
     "grunt-autoprefixer": "latest",

@@ -12,18 +12,18 @@ p {
 }
 
 //at this size we can fit one more horizontal image
-.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(4),
-.home .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(5) {
-	display: inline-block;
-	visibility: visible;
-}
+// #home-after-sb .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(3),
+// #home-after-sb .su-custom-gallery:nth-child(2) > .su-custom-gallery-slide:nth-child(5) {
+// 	display: inline-block;
+// 	visibility: visible;
+// }
 
-//hide two more vertical images
-.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(4),
-.home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(5) {
-	display: none;
-	visibility: hidden;
-}
+// //hide two more vertical images
+// .home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(1),
+// .home .su-custom-gallery:nth-child(1) > .su-custom-gallery-slide:nth-child(5) {
+// 	display: none;
+// 	visibility: hidden;
+// }
 
 .home {
 

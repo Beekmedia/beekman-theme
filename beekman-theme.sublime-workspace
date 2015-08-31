@@ -32,9 +32,13 @@
 	"command_palette":
 	{
 		"height": 375.0,
-		"last_filter": "rein",
+		"last_filter": "grun",
 		"selected_items":
 		[
+			[
+				"grun",
+				"Snippet: grunt.loadTasks"
+			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
@@ -148,7 +152,7 @@
 				"Package Control: Enable Package"
 			]
 		],
-		"width": 579.0
+		"width": 495.0
 	},
 	"console":
 	{
@@ -180,10 +184,12 @@
 	"file_history":
 	[
 		"/Users/djbeeker/github/beekman-theme/Gruntfile.js",
-		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_1366up.scss",
 		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_1270up.scss",
-		"/Users/djbeeker/github/beekman-theme/functions.php",
 		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_base.scss",
+		"/Users/djbeeker/github/dotfiles/.bash_profile",
+		"/Users/djbeeker/.bash_profile",
+		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_1366up.scss",
+		"/Users/djbeeker/github/beekman-theme/functions.php",
 		"/Users/djbeeker/github/beekman-theme/header.php",
 		"/Users/djbeeker/github/beekman-theme/page-gallery.php",
 		"/Users/djbeeker/github/beekman-theme/library/scss/breakpoints/_768up.scss",
@@ -304,9 +310,7 @@
 		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-header.php",
 		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/custom/custom.css",
 		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/library/scss/breakpoints/_1030up.scss",
-		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-front.php",
-		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-index.php",
-		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-page.php"
+		"/Users/djbeeker/Sites/webapps/bbcms/content/themes/oasis-wp-2/includes/partials/content-front.php"
 	],
 	"find":
 	{

@@ -152,9 +152,9 @@ function beekman_scripts_and_styles() {
 	$wp_styles->add_data( 'beekman-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 	wp_enqueue_script( 'jquery' );
-	    wp_register_style('meanmenu', 'http://www.oasislifedesign.com/content/themes/oasis-wp-2/library/css/meanmenu.css', array(), '', 'all' );
+	    wp_register_style('meanmenu', get_stylesheet_directory_uri() . '/library/css/meanmenu.css', array(), '', 'all' );
 
-     wp_register_script('meanmenu',     'http://www.oasislifedesign.com/content/themes/oasis-wp-2/library/js/libs/jquery.meanmenu.js',          array('jquery'), 1, FALSE);
+     wp_register_script('meanmenu', get_stylesheet_directory_uri() . '/library/js/libs/jquery.meanmenu.js',          array('jquery'), 1, FALSE);
     wp_enqueue_style( 'meanmenu' );
     wp_enqueue_script('meanmenu');
 	wp_enqueue_script( 'beekman-js' );
@@ -177,12 +177,12 @@ function beekman_theme_support() {
 	// wp custom background (thx to @bransonwerner for update)
 	add_theme_support( 'custom-background',
 	                  array(
-	    'default-image' => '',    // background image default
-	    'default-color' => '',    // background color default (dont add the #)
-	    'wp-head-callback' => '_custom_background_cb',
-	    'admin-head-callback' => '',
-	    'admin-preview-callback' => ''
-	    )
+			    'default-image' => '',    // background image default
+			    'default-color' => '',    // background color default (dont add the #)
+			    'wp-head-callback' => '_custom_background_cb',
+			    'admin-head-callback' => '',
+			    'admin-preview-callback' => ''
+			)
 	                  );
 
 	// rss thingy

@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(grunt) {
 
     // 1. All configuration goes here
@@ -17,8 +18,8 @@ module.exports = function(grunt) {
           },
           options: {
             sourceMap: true,
-            outputStyle: 'nested',
-            imagePath: "library/images",
+            outputStyle: 'compressed',
+            imagePath: 'library/images',
           }
         },
 
@@ -62,7 +63,7 @@ module.exports = function(grunt) {
         },
 
         cmq: {
-            your_target: {
+            yourTarget: {
                 files: {
                     'library/css' : 'library/css/style.css'
                 }
@@ -89,10 +90,9 @@ module.exports = function(grunt) {
         concat: {
             footer: {
                 src: [
-                  
                      '!library/js/libs/modernizr.custom.min.js',
+                     '!library/js/libs/meanmenu.custom.min.js',
                     'library/js/scripts.js',  // This specific file
-                    '!library/js/libs/modernizr.custom.min.js'
                 ],
                 dest: 'library/js/dist/main.js',
             }

@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Project Gallery page
+ Template Name: Single Project Gallery page
 */
 ?>
 
@@ -23,7 +23,6 @@
 									<h1 class="page-title"><?php the_title(); ?></h1>
 									<?php if ( has_post_thumbnail() ) {
 										echo '<div class="aligncenter fullwidth abs-top">';
-
 											the_post_thumbnail('full' );
 										echo '</div>';
 									} //end post thumbnail
