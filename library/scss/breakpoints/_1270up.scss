@@ -7,8 +7,20 @@
 // You can add some advanced styles here if you like. This kicks in
 // on larger screens.
 //******************************************************************/
+//
+#slidecaption {
+		width: 80%;
+		margin-left: 10%;
+}
+@media only screen and (max-height: 600px){
+	#slidecaption {
+		font-size: 2.6rem;
+		top: 0;
+	}
+}
+
 p {
-		font-size: 1.14285714286em; //16px
+	font-size: 1.14285714286em; //16px
 }
 
 //at this size we can fit one more horizontal image
@@ -25,15 +37,11 @@ p {
 // 	visibility: hidden;
 // }
 
-.home {
+.web {
 
 	.wrap {
 		width: 99%;
 	}
-
-	#gallery-1 {
-		height: auto; //!important;
-}
 
 	.d-2of7 {
 				// width: 300px;

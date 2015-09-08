@@ -5,6 +5,7 @@ Author:
 Stylesheet: Main Stylesheet
 ******************************************************************/
 //from https://github.com/luetkemj/grunt-for-bones
+
 @import '../../bower_components/susy/sass/susy';
 @import '../../bower_components/breakpoint-sass/stylesheets/breakpoint';
 
@@ -98,7 +99,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
 
 	// styles in 768up.scss
 	@import 'breakpoints/768up';
@@ -135,6 +136,8 @@ This is for the larger monitors and possibly full screen viewers.
 	@import 'breakpoints/1366up';
 
 } // end of media query
+
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

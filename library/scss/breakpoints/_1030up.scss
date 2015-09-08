@@ -8,7 +8,16 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-
+//adjust location of the caption for fullscreen slideshow on home page.
+@media only screen and (max-height: 480px){
+	#controls-wrapper { //caption jumps to  the bottom for short screens
+		top: auto;
+		bottom: 9rem; //wide, short screens have larger captions, so need more distance from the bottom
+	}
+}
+#slidecaption {
+	font-size: 4rem;
+}
 //at desktop size, we want two fewer vertical images and one more horizontal image
 #home-sb .su-custom-gallery  .su-custom-gallery-slide {
 	&:nth-child(4), &:nth-child(5) {

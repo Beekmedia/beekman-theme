@@ -16,20 +16,22 @@ COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
-$benblue: 	rgba(55, 232, 253, 1);
-$blue-electric:	rgba(215,255,255,0.9);
+$benblue: 		rgba(55, 232, 253, 1);
+$blue-electric:	rgba(215, 255, 255, 1);
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
+$red:			#d42826;
 $black:             #323944;
 $white:             #fff;
 
-$light-gray:	#f8f9fa;
+$light-gray:		#f8f9fa;
 $gray:              #eaedf2;
-$text-color:	#5c6b80;
+$text-color:		#5c6b80;
 $meta-gray:	#9fa6b4;
+$slate-gray: 	rgb(55, 55, 55);
 $frost: 		#e0f8ff;
 
 $tan:               #eceee5;
@@ -38,9 +40,13 @@ $green:             #7dd667;
 
 $beekman-pink:        #f01d4f;
 $blue:              #2980b9;
+$electric-blue: $blue-electric;
+$sky-blue:		rgba(55, 232, 253, 1);
 $blue-dk:	#1a74a1;
 $bondi:		#009dbb;
 $lime:		#bafd31;
+$lemon:	rgb(252, 228, 25);
+
 
 $link-color:       lighten($lime, 30%);
 $link-hover:        darken($link-color, 9%);

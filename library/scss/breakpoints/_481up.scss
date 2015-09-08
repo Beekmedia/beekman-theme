@@ -15,13 +15,115 @@ upon your base.scss styles.
 
 ******************************************************************/
 
-/*
-IMPORTANT NOTE ABOUT SASS 3.3 & UP
-You can't use @extend within media queries
-anymore, so just be aware that if you drop
-them in here, they won't work.
-*/
+#slidecaption {
+	font-size: 2.4rem;
+	line-height: 1;
+	width: 90%;
+	margin-left: 5%;
+}
 
+.nav {
+	border: 0;
+
+	ul {
+		background:$black;
+		margin-top:0;
+	}
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			border: 1px solid #ccc;
+			border-top: 0;
+			margin-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
+			li {
+				a {
+					border-bottom: 1px solid #ccc;
+					border-right: 0;
+					display: block;
+					padding-left: 10px;
+					width: 180px;
+				}
+
+				&:last-child {
+					a {
+						border-bottom: 0;
+					}
+				}
+			/*
+			if you need to go deeper, go nuts
+			just remember deeper menus suck
+			for usability. k, bai.
+			*/
+
+			ul {
+				left: 100%;
+				top: 0;
+			}
+		}
+		/* highlight sub-menu current page */
+	}
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility: visible;
+		}
+} /* end .menu ul li */
+/* highlight current page */
+/* end current highlighters */
+} /* end .nav */
+
+
+
+
+/*================================================================
+=            Slogan- Resizes and moves at breakpoints         							   =
+================================================================*/
+.slogan { //shrink a bit and pop beneath logo at less than 660px
+	color: $benblue;
+	// float: none;
+	font-family: 'Play',sans-serif;
+	font-size: 0.79rem;
+	line-height: 1; //1.4?
+	overflow: visible;
+	text-align: center;
+	transition: color ease-in-out 1s;
+}
+
+
+@media only screen and (min-width: 660px){ //horizontally center slogan  between logo and nav, baseline aligned
+	.slogan {
+		width: 104%; //to center between logo and nav
+		top: .7rem;
+		font-size: 1.1rem;
+	}
+
+	.header {
+		padding-bottom: .5rem;
+	}
+}
+
+/*-----  End of Slogan section  ------*/
 
 //*********************
 //NAVIGATION STYLES
@@ -30,66 +132,15 @@ them in here, they won't work.
 	// font-size: 1.1rem;
 	// padding-top: 2.2rem;
 	// position: relative;
+	// display: block;
 	// overflow: visible;
+	// padding-top: 0;
+	// top: auto;
 }
 
 .slogan:hover {
-	color: rgba(215,255,255,0.9);
-	text-shadow: 0px 0px 5px RGBA(186, 253, 49, 0.7);
+	// text-shadow: 0px 0px 5px RGBA(186, 253, 49, 0.7);
  }
-
-// .nav {
-// 	li {
-// 		a {
-
-// 		}
-// 	}
-// }
-
-	/* .menu is clearfixed inside mixins.scss */
-	// .menu {
-	// 	ul {
-	// 		li {
-
-	// 			a {
-
-	// 				/*
-	// 				you can use hover styles here even though this size
-	// 				has the possibility of being a mobile device.
-	// 				*/
-	// 				&:hover, &:focus {
-
-	// 				}
-	// 			}
-
-	// 			&:first-child {}
-	// 			&:last-child {}
-
-	// 			/*
-	// 			plan your menus and drop-downs wisely.
-	// 			*/
-	// 			ul.sub-menu,
-	// 			ul.children {
-	// 				li {
-	// 					a {
-	// 						&:hover,
-	// 						&:focus {}
-	// 						&:link {}
-	// 					}
-	// 					&:first-child {}
-	// 					&:last-child {}
-	// 				}
-	// 			}
-	// 		} /* end .menu ul li */
-
-	// 		/* highlight current page */
-	// 		li.current-menu-item,
-	// 		li.current_page_item,
-	// 		li.current_page_ancestor {
-	// 			a {}
-	// 		}  /* end current highlighters */
-	// 	} /* end .menu ul */
-	// } /* end .menu */
 
 /*********************
 POSTS & CONTENT STYLES
@@ -123,6 +174,8 @@ POSTS & CONTENT STYLES
 	}
 
 } /* end .entry-content */
+
+
 
 //smaller title size for smaller screens on project detail pages
 .page-template-page-single-gallery .page-title{

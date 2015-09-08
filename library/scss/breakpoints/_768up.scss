@@ -16,84 +16,61 @@ p {
 	font-size: 1em; //14px
 }
 
-//larger title size for smaller screens on project detail pages
+@media only screen and (max-height: 480px){
+	#controls-wrapper { //caption jumps to  the bottom for short screens
+		top: auto;
+		bottom: 7rem;
+	}
+}
+
+#controls {//top for #slidecaption
+	top: 2rem;
+}
+
+#slidecaption {
+	font-size: 3rem;
+	text-align: center;
+	// width: 100%;
+}
+
+//larger title size for larger screens on project detail pages
 .page-template-page-single-gallery .page-title {
 	font-size: 48px;
 }
 
-.home #home-after-sb .su-custom-gallery {
+#home-after-sb .su-custom-gallery {
 	display: flex;
 	flex-direction: row;
 }
 
-// #home-sb .su-custom-gallery .su-custom-gallery-slide img { //sidebar images
-	// height: auto;
-	// max-width: 400px;
-	// width: 100%;
-// }
-
-// #home-after-sb .su-custom-gallery:nth-child(1) .su-custom-gallery-slide:nth-child(1), 
-// #home-after-sb .su-custom-gallery:nth-child(1) .su-custom-gallery-slide:nth-child(4),
-// #home-after-sb .su-custom-gallery:nth-child(1) .su-custom-gallery-slide:nth-child(5) {
-// 	display: none;
-// 	visibility: hidden;
-// }
-
-// #home-after-sb .su-custom-gallery:nth-child(1) .su-custom-gallery-slide:nth-child(3), 
-// #home-after-sb .su-custom-gallery:nth-child(1) .su-custom-gallery-slide:nth-child(4) {
-// 	display: block;
-// 	visibility: visible;
-// }
-
-// .su-custom-gallery {
-
-// 	&:nth-child(2) {
-// 		.su-custom-gallery-slide img { //strip of images below content
-// 			height: auto;
-// 			max-width: 300px;
-// 			width: 100%;
-// 		}
-
-// 		> .su-custom-gallery-slide:nth-child(4) {
-// 			display: none;
-// 			visibility: hidden;
-// 		}
-// 	}
-// }
-
 .header {
-	height: 5.6rem;
+	//height: 5.6rem;
 }
 
 .slogan { //Front End Engineer
-	animation-delay: 5000ms;
-	animation-direction: alternate;
-	animation-iteration-count: 1;
-	animation-name: slogan_reveal;
-	animation-play-state: running;
-	animation-timing-function: ease-in;
+	// animation-delay: 5000ms;
+	// animation-direction: alternate;
+	// animation-iteration-count: 1;
+	// animation-name: slogan_reveal;
+	// animation-play-state: running;
+	// animation-timing-function: ease-in;
 	color: $benblue;
-	display: inline-block;
-	float: none;
+	// float: none;
 	font-family: 'Play',sans-serif;
-	font-size: 1.7rem;
-	font-style: italic;
+	font-size: 1.5rem;
+	// font-style: italic;
 	font-weight: bold;
+	// left: 0;
+	// right:0;
 	line-height: 1; //1.4?
-	margin-left: 16.4rem;
+	// margin-left: 16.4rem;
 	overflow: visible;
-	padding-right: 0;
-	padding-top: 1.6rem;
-	position: relative;
+	// padding-top: 1.6rem;
 	text-align: center;
-	transition: all ease-in-out 1s;
-	width: 69%;
-}
-
-.slogan:hover {
-	color: $blue-electric;
-	text-shadow: 0 0 5px RGBA(186, 253, 49, .7);
-	transform: translateY(-10px) scale(1.25, 1.15) rotate(.2deg);
+	transition: color ease-in-out 1s;
+	width: 104%; //to center between logo and nav
+	top: 5px;
+	// transition: all ease-in-out 1s;
 }
 
 /*********************
@@ -122,76 +99,8 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-.nav {
-	border: 0;
 
-	ul {
-		background:$black;
-		margin-top:0;
-	}
-	li {
-		float: left;
-		position: relative;
 
-		a {
-			border-bottom: 0;
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $white;
-				text-decoration: underline;
-			}
-		}
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			border: 1px solid #ccc;
-			border-top: 0;
-			margin-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
-			
-			li {
-				a {
-					border-bottom: 1px solid #ccc;
-					border-right: 0;
-					display: block;
-					padding-left: 10px;
-					width: 180px;
-				}
-
-				&:last-child {
-					a {
-						border-bottom: 0;
-					}
-				}
-			/*
-			if you need to go deeper, go nuts
-			just remember deeper menus suck
-			for usability. k, bai.
-			*/
-
-			ul {
-				left: 100%;
-				top: 0;
-			}
-		}
-		/* highlight sub-menu current page */
-	}
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility: visible;
-		}
-} /* end .menu ul li */
-/* highlight current page */
-/* end current highlighters */
-} /* end .nav */
 
 /*********************
 SIDEBARS & ASIDES

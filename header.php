@@ -22,7 +22,9 @@
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 
-	<style>@import url('http: //fonts.googleapis.com/css?family=Play');</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Play:400&text=ben" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Play:400&text=Beekman" rel="stylesheet">
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 			<![endif]-->
@@ -44,32 +46,32 @@
 		<body <?php body_class(); ?>>
 
 			<div id="container">
-				<nav role="navigation">
-					<?php wp_nav_menu(array(
-    					'container' => false,                           // remove nav container
-    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					'menu' => __( 'The Main Menu', 'beekman-theme' ),  // nav name
-    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					'theme_location' => 'main-nav',                 // where it's located in the theme
-    					'before' => '',                                 // before the menu
-        			'after' => '',                                  // after the menu
-        			'link_before' => '',                            // before each link
-        			'link_after' => '',                             // after each link
-        			'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => ''                             // fallback function (if there is one)
-    					)); ?>
-
-    				</nav>
     				<header class="header" role="banner">
     					<div id="inner-header" class="wrap cf">
+    						<div class="split">
+	    						<div id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><h1><strong>Ben</strong><b>Beekman</b></h1></a></div>
+							<div class="slogan"><?php bloginfo('description'); ?></div>
+							<nav role="navigation">
+								<?php wp_nav_menu(array(
+				    					'container' => false,                           // remove nav container
+				    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+				    					'menu' => __( 'The Main Menu', 'beekman-theme' ),  // nav name
+				    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
+				    					'theme_location' => 'main-nav',                 // where it's located in the theme
+				    					'before' => '',                                 // before the menu
+					        			'after' => '',                                  // after the menu
+					        			'link_before' => '',                            // before each link
+					        			'link_after' => '',                             // after each link
+					        			'depth' => 0,                                   // limit the depth of the nav
+				    					'fallback_cb' => ''                             // fallback function (if there is one)
+			    					)); ?>
 
-    						<?php //semi-minimal markup for css logo with transitions?>
-    						<div id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><h1><strong>Ben</strong> <b>Beekman</b></h1></a></div>
+			    				</nav>
 
+	    						<?php //semi-minimal markup for css logo with transitions?>
 
-    						<div class="slogan"><?php bloginfo('description'); ?></div>
-
-    					</div>
+	    					</div> <!-- .split -->
+	    				</div>  <!-- inner-header -->
 
 				<?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail(); ?>
 

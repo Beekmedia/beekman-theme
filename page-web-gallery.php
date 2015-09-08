@@ -1,3 +1,9 @@
+<?php
+/*
+ Template Name: Web Design and Development page
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="content">
