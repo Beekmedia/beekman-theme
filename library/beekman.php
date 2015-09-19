@@ -134,7 +134,9 @@ function beekman_scripts_and_styles() {
 
 		// ie-only style sheet
   	wp_register_style( 'beekman-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+	wp_register_style('meanmenu', (get_stylesheet_directory_uri() . '/library/css/meanmenu.css'), array(), '', 'all' );
 
+	wp_enqueue_style( 'meanmenu' );
     // comment reply script for threaded comments
   	if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
   		wp_enqueue_script( 'comment-reply' );
@@ -152,11 +154,10 @@ function beekman_scripts_and_styles() {
 	$wp_styles->add_data( 'beekman-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 	wp_enqueue_script( 'jquery' );
-	    wp_register_style('meanmenu', get_stylesheet_directory_uri() . '/library/css/meanmenu.css', array(), '', 'all' );
 
-     wp_register_script('meanmenu', get_stylesheet_directory_uri() . '/library/js/libs/jquery.meanmenu.js',          array('jquery'), 1, FALSE);
-    wp_enqueue_style( 'meanmenu' );
-    wp_enqueue_script('meanmenu');
+     wp_register_script('meanmenu', (get_stylesheet_directory_uri() . '/library/js/libs/jquery.meanmenu.js'),          array( 'jquery' ), '', true);
+
+    	wp_enqueue_script('meanmenu');
 	wp_enqueue_script( 'beekman-js' );
 	}
 }

@@ -14,133 +14,188 @@ so you still want to keep it pretty light and simply expand
 upon your base.scss styles.
 
 ******************************************************************/
-
-#slidecaption {
-	font-size: 2.4rem;
-	line-height: 1;
-	width: 90%;
-	margin-left: 5%;
+#logo {
+	display: inline-block;
+	text-align: none;
+	position: absolute;
 }
 
-.nav {
-	border: 0;
+#slidecaption {
+	font-size: 2rem;
+}
 
-	ul {
-		background:$black;
-		margin-top:0;
+@media screen and (max-height: 480px) {
+	#slidecaption {
+		font-size: 2.2rem;
 	}
-	li {
-		float: left;
+}
+
+
+//Banner layout- left aligned, centered within space, then right aligned elements
+//-------------------------------------------------------------------------------------------------------
+.split {
+	position: relative;
+
+	> #logo,
+	> nav {
+		display: inline;
 		position: relative;
+		z-index: 10;
+	}
 
-		a {
-			border-bottom: 0;
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $white;
-				text-decoration: none;
-			}
+	> div:first-child {
+		float: left;
+	}
+
+	> nav {
+		border: 0;
+		float: right;
+		top: .285rem;
+
+		&::after {
+			clear: both;
+			content: '';
+			display: table;
 		}
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			border: 1px solid #ccc;
-			border-top: 0;
+	}
+}
+
+header nav .nav {
+	display: block;
+}
+
+@media screen and (min-width: 640px) {
+
+	.split > nav {
+		background: white(.08);
+		border-radius: .3rem;
+		display: block;
+		visibility: visible;
+
+		ul {
+			background: rgba (0, 0, 0, 100);
 			margin-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
+		}
 
-			li {
-				a {
-					border-bottom: 1px solid #ccc;
-					border-right: 0;
-					display: block;
-					padding-left: 10px;
-					width: 180px;
+		li {
+			float: left;
+			position: relative;
+
+			a {
+				border-bottom: 0;
+				/*
+				you can use hover styles here even though this size
+				has the possibility of being a mobile device.
+				*/
+				&:hover, &:focus {
+					color: $blue-electric;
+					text-decoration: none;
 				}
+			}
 
-				&:last-child {
+			/* plan your menus and drop-downs wisely. */
+			ul.sub-menu,
+			ul.children {
+				border: 1px solid #ccc;
+				border-top: 0;
+				margin-top: 0;
+				position: absolute;
+				visibility: hidden;
+				z-index: 8999;
+
+				li {
+
 					a {
-						border-bottom: 0;
+						border-bottom: 1px solid #ccc;
+						border-right: 0;
+						display: block;
+						padding-left: 10px;
+						width: 180px;
+					}
+
+					&:last-child {
+
+						a {
+							border-bottom: 0;
+						}
+					}
+					/*
+					if you need to go deeper, go nuts
+					just remember deeper menus suck
+					for usability. k, bai.
+					*/
+
+					ul {
+						left: 100%;
+						top: 0;
 					}
 				}
-			/*
-			if you need to go deeper, go nuts
-			just remember deeper menus suck
-			for usability. k, bai.
-			*/
-
-			ul {
-				left: 100%;
-				top: 0;
+					/* highlight sub-menu current page */
+			}// end ul.children
+				/* showing sub-menus */
+			&:hover > ul {
+				top: auto;
+				visibility: visible;
 			}
-		}
-		/* highlight sub-menu current page */
-	}
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility: visible;
-		}
-} /* end .menu ul li */
-/* highlight current page */
-/* end current highlighters */
-} /* end .nav */
+		} /* end .menu ul li */
 
-
+		/* highlight current page */
+		.current_page_item {
+			background-color: white(.1);
+			border-radius: .3rem;
+		}
+	} /* end .split nav */
+}
 
 
 /*================================================================
 =            Slogan- Resizes and moves at breakpoints         							   =
 ================================================================*/
-.slogan { //shrink a bit and pop beneath logo at less than 660px
-	color: $benblue;
-	// float: none;
-	font-family: 'Play',sans-serif;
-	font-size: 0.79rem;
-	line-height: 1; //1.4?
-	overflow: visible;
-	text-align: center;
-	transition: color ease-in-out 1s;
-}
 
 
-@media only screen and (min-width: 660px){ //horizontally center slogan  between logo and nav, baseline aligned
+
+@media screen and (min-width:500px) and (max-width:570px) {
 	.slogan {
-		width: 104%; //to center between logo and nav
-		top: .7rem;
-		font-size: 1.1rem;
-	}
-
-	.header {
-		padding-bottom: .5rem;
+		font-size: 1.125rem;
+		position: relative;
+		top: .65rem;
+		text-align: center;
 	}
 }
+
+@media screen and (min-width:551px) and (max-width: 659px) {
+	.slogan {
+		font-size: 1.2rem;
+		position: relative;
+		top: .75rem;
+		text-align:center;
+	}
+}
+@media screen and (min-width: 660px) {
+
+	.slogan {
+		font-size: .88rem;
+		position: absolute;
+		text-align: center;
+		top: .825rem;
+		width: 98%; //to center between logo and nav
+	}
+
+	#control-wrapper {
+		top: 2rem;
+	}
+}
+
+
+// @media screen and (min-width:580px) and (max-width:679px) {
+// 	.slogan {
+// 		position: relative;
+// 		top: 0.45rem;
+// 		font-size: 1.2rem;
+// 	}
+// }
 
 /*-----  End of Slogan section  ------*/
-
-//*********************
-//NAVIGATION STYLES
-//*********************/
-.slogan {
-	// font-size: 1.1rem;
-	// padding-top: 2.2rem;
-	// position: relative;
-	// display: block;
-	// overflow: visible;
-	// padding-top: 0;
-	// top: auto;
-}
-
-.slogan:hover {
-	// text-shadow: 0px 0px 5px RGBA(186, 253, 49, 0.7);
- }
 
 /*********************
 POSTS & CONTENT STYLES

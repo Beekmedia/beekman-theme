@@ -16,6 +16,20 @@ p {
 	font-size: 1em; //14px
 }
 
+.slogan {
+	font-size: 1.3rem;
+	line-height: 1; //1.4?
+	overflow: visible;
+	text-align: center;
+	width: 98%; //to center between logo and nav
+	top: 0.5rem;
+	position: absolute;
+}
+
+#slidecaption {
+	font-size: 2.5rem;
+}
+
 @media only screen and (max-height: 480px){
 	#controls-wrapper { //caption jumps to  the bottom for short screens
 		top: auto;
@@ -23,15 +37,14 @@ p {
 	}
 }
 
-#controls {//top for #slidecaption
-	top: 2rem;
+@media only screen and (min-height: 481px) and (max-height: 600px){
+	#controls-wrapper {
+		top: 4.4rem; //move down just slightly to make room for shifted banner
+		bottom: auto;
+	}
 }
 
-#slidecaption {
-	font-size: 3rem;
-	text-align: center;
-	// width: 100%;
-}
+
 
 //larger title size for larger screens on project detail pages
 .page-template-page-single-gallery .page-title {
@@ -47,31 +60,7 @@ p {
 	//height: 5.6rem;
 }
 
-.slogan { //Front End Engineer
-	// animation-delay: 5000ms;
-	// animation-direction: alternate;
-	// animation-iteration-count: 1;
-	// animation-name: slogan_reveal;
-	// animation-play-state: running;
-	// animation-timing-function: ease-in;
-	color: $benblue;
-	// float: none;
-	font-family: 'Play',sans-serif;
-	font-size: 1.5rem;
-	// font-style: italic;
-	font-weight: bold;
-	// left: 0;
-	// right:0;
-	line-height: 1; //1.4?
-	// margin-left: 16.4rem;
-	overflow: visible;
-	// padding-top: 1.6rem;
-	text-align: center;
-	transition: color ease-in-out 1s;
-	width: 104%; //to center between logo and nav
-	top: 5px;
-	// transition: all ease-in-out 1s;
-}
+
 
 /*********************
 GENERAL STYLES

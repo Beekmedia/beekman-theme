@@ -8,52 +8,57 @@ Everything here will be loaded by mobile devices. You want to keep it as minimal
 possible. This is called at the top of the main stylesheet and will be used across all viewports.
 
 ******************************************************************/
+#bg-pattern {
+    cursor: pointer;
+}
+
 
 //front page supersized slideshow
 #controls-wrapper {
-	top: 5rem;
 	left: 0;
+	top: 5rem;
 }
 
 #controls-wrapper, #controls {
 	background: transparent;
+	left: 0;
 	position: absolute;
+	right: 0;
 	text-align: center;
-	right:0;
-	left:0;
 }
 
-#controls{
+#controls {
 	overflow: visible;
-	top: 4rem;
+	top: 0;
 }
 
 #slidecaption {
+	cursor: pointer;
 	font-size: 1.6rem;
+	height: 100px;
+	line-height: 1.3;
+	overflow: visible;
 	text-align: center;
 	width: 100%;
-	overflow: visible;
-	height: 100px;
-	line-height: 1.5;
 }
 
 //adjust location of the caption for fullscreen slideshow on home page.
-@media only screen and (max-height: 480px){
+@media only screen and (max-height: 480px) {
 	#controls-wrapper { //caption jumps to  the bottom for short screens
-		top: auto;
 		bottom: 7rem;
+		top: auto;
 	}
 }
 
 @media only screen and (min-height: 501px) and (max-height: 660px){
 	#controls-wrapper { //caption moves down less for short screens
-		top: 56px;
+		top: 5.4rem;
 	}
 }
 
 @media only screen and (min-height: 661px) and (max-height: 899px){
 	#controls-wrapper { //caption moves down less for short screens
-		top: 60px;
+		top: 80px;
 	}
 }
 
@@ -67,22 +72,40 @@ possible. This is called at the top of the main stylesheet and will be used acro
 	display: none;
 	visibility: hidden;
 }
+
+/* Remove all styling from Galleries. This will allow Masonry to work a bit better. Only available on WP >= 3.9 since it requires HTML5 <figure> */
+.gallery {
+	margin: 1.5em auto;
+}
+
 .gallery-caption {
+	font-size: .875rem;
+	line-height: 125%;
 	background-color: rgba(255, 255, 255, .7);
 	bottom: 3px;
 	color: darken($white, 50%);
 }
 
-.home{
+.home {
 	.supersized-content {
-		position: absolute;
 		bottom: 10%;
-		left: auto;
-		right:auto;
 		color: $black;
+		left: auto;
+		position: absolute;
+		right: auto;
 	}
 
-	footer{
+	header.article-header {
+		display: none;
+		visibility: hidden;
+	}
+
+	figcaption {
+		display: none;
+		visibility: hidden;
+	}
+
+	footer {
 		display: none;
 		visibility: false;
 	}
@@ -99,11 +122,7 @@ possible. This is called at the top of the main stylesheet and will be used acro
 	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
-.entry-content {
-	font-size: 1.125rem;
-}
-
-//display custom galleries as a vertical row
+//display custom galleries as a vertical row on mobile
 #home-after-sb .su-custom-gallery {
 	display: flex;
 	flex-direction: column;
@@ -120,6 +139,7 @@ possible. This is called at the top of the main stylesheet and will be used acro
 #home-sb .su-custom-gallery {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 0;
 
 	// > .su-custom-gallery-slide {
 		// 	&:nth-child(4) {
@@ -130,6 +150,7 @@ possible. This is called at the top of the main stylesheet and will be used acro
 	.fullwidth {
 		height: auto;
 		width: 100%;
+
 		attachment-full {
 			height: auto;
 			text-align: center;
@@ -152,35 +173,6 @@ possible. This is called at the top of the main stylesheet and will be used acro
 	}
 }
 
-
-
-/* Remove all styling from Galleries. This will allow Masonry to work a bit better. Only available on WP >= 3.9 since it requires HTML5 <figure> */
-.gallery {
-	margin: 1.5em auto;
-}
-
-.gallery-caption {
-	font-size: .875rem;
-	line-height: 125%;
-}
-
-//images in widget areas are moved around based on dimensions
-.home {
-	header.article-header {
-		display: none;
-		visibility: hidden;
-	}
-	figcaption {
-		display: none;
-		visibility: hidden;
-	}
-}
-
-
-
-
-// @import url(http: //fonts.googleapis.com/css?family=Baumans);
-// @import url(http: //fonts.googleapis.com/css?family=Playfair+Display: 400, 400italic);
 /*********************
 GENERAL STYLES
 *********************/
@@ -191,23 +183,15 @@ p {
 }
 
 nav>.top-nav {
-	// line-height: 1;
-	// margin-left: .5rem;
-	// position: relative;
-	// right: 1rem;
-	// top: 1rem;
-	// z-index: 999999;
 
 	li {
-		// display: inline;
-		// float: left;
+
 		a {
-			border-radius: 1rem;
+			border-radius: 0.3rem;
 			color: $link-color;
 			font-size: 1.125rem;
 			font-weight: bold;
-			padding: .015rem .5rem;
-
+			padding: 0.1125rem 0.5rem;
 			&:active,
 			&:hover {
 				background-color: lighten($black, 5%);
@@ -248,14 +232,11 @@ a, a:visited {
 	&:focus {
 		color: $link-hover;
 	}
-	/* on click */
 	/* mobile tap color */
 	&:link {
-	// this highlights links on iPhones/iPads.
-	// so it basically works like the : hover selector
-	// for mobile devices.
+	// this highlights links on iPhones/iPads:
 	-webkit-tap-highlight-color: rgba(0, 0, 0, .3);
-}
+	}
 }
 
 /******************************************************************
@@ -317,38 +298,6 @@ HEADER STYLES
 
 
 
-//Banner layout- left aligned, centered within space, then right aligned elements
-//-------------------------------------------------------------------------------------------------------
-.split {
-	position: relative;
-
-	> div:first-child,
-	> nav {
-		display: inline !important;
-		position: relative;
-		z-index: 10;
-	}
-
-	> div:first-child {
-		float: left;
-	}
-
-	> nav {
-		float: right;
-		top: 5px;
-	}
-
-	&::after {
-		clear: both;
-		content: '';
-		display: table;
-	}
-}
-
-#logo {
-	display: inline-block;
-	position: relative;
-}
 
 header h1 {
 	font-family: 'Play', sans-serif;
@@ -400,35 +349,70 @@ header h1 {
 		}
 	}
 
-
+@media only screen and (max-width:660px) and (max-height:900px){
+	#controls-wrapper { //move the caption down the page to compensate for mean/menu
+		top: 8.4rem;
+	}
+}
 
 .slogan {
-	color: $sky-blue;
+	color: $white-lime;
 	font-family: 'Play', sans-serif;
-	font-size: .83rem;
 	font-weight: bold;
 	line-height: 1rem;
 	overflow: visible;
 	position: absolute;
-	text-align: center;
-	top: 2rem; //only active when slogan pops beneath
-	width: auto;
 	z-index: 5;
-
-	&:hover {
-		color: $electric-blue;
-	}
 }
 
 .header {
-	background-color: $black(.5);
-	// height: 2.4rem;
-	position: relative;
+	background-color: black(.5);
 	display: block;
-	padding-top: 1rem;
-	padding-bottom: 1.5rem;
+	padding: 0 0 .5rem;
+	position: relative;
 }
 
+@media only screen and (min-width: 320px) and (max-width:440px){
+	.slogan {
+		font-size: .8rem;
+		position: relative;
+		text-align: center;
+
+	}
+
+	#logo {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 440px) and (max-width:472px){
+	.slogan {
+		font-size: .8rem;
+		position: relative;
+		text-align: center;
+		top: 1.1em;
+	}
+
+	#logo {
+		float: left;
+	}
+}
+
+@media only screen and (min-width: 470px) and (max-width:500px){
+	.slogan {
+		font-size: .825rem;
+		position: relative;
+		text-align: center;
+		top: .9em;
+	}
+}
+
+@media screen and (min-width:478px) and (max-width:679px) {
+	.split > nav {
+		display: none;
+		visibility: hidden;
+	}
+}
 
 /**********************************************************************
 Input elements-- forms for contact page
@@ -626,18 +610,21 @@ POSTS & CONTENT STYLES
 	border: 0 solid transparent;
 	border-radius: 3px;
 	margin-bottom: 1.5em;
+
 	header {
 		border-bottom: 0 solid transparent;
-// padding: 1.5em;
-}
-footer {
-	font-size: 1.125rem;
-	border-top: 0 solid $light-gray;
-	padding: 1.5em;
-	p {
-		margin: 0;
+		// padding: 1.5em;
 	}
-}
+
+	footer {
+		border-top: 0 solid $light-gray;
+		font-size: 1.125rem;
+		padding: 1.5em;
+
+		p {
+			margin: 0;
+		}
+	}
 } /* end .hentry */
 
 .single-title,
@@ -699,10 +686,12 @@ footer {
 		background-color: $light-gray;
 		border-bottom: 1px solid $gray;
 		border-right: 1px solid $gray;
+
 		&:last-child {
 			border-right: 0;
 		}
 	}
+
 	blockquote {
 		border-left: 3px solid $blue;
 		color: $meta-gray;
@@ -712,7 +701,7 @@ footer {
 	}
 
 	dd {
-		color: #787878;
+		color: $medium-gray;
 		font-size: .9em;
 		margin-bottom: 1.5em;
 		margin-left: 0;
@@ -720,10 +709,12 @@ footer {
 
 	img {
 		margin: 0 0 1.5em;
+
 		&.attachment-full {
 			height: auto;
 			width: 100%;
 		}
+
 		.size-auto,
 		.size-full,
 		.size-large,
@@ -734,6 +725,7 @@ footer {
 			height: auto;
 			max-width: 100%;
 		}
+
 		pre {
 			background: $black;
 			border-radius: 3px;
@@ -759,6 +751,7 @@ footer {
 	font-size: 1.25rem;
 
 }
+
 dl.gallery-item {
 	margin: 1rem !important;
 }
@@ -766,22 +759,23 @@ dl.gallery-item {
 .wp-caption {
 	background: $black;
 	color: $white;
+	font-size: 1.125rem;
 	max-width: 100%;
 	padding: 5px;
-	font-size: 1.125rem;
+
 /* images inside wp-caption */
 
-img {
-	margin-bottom: 0;
-	max-width: 100%;
-	width: 100%;
-}
+	img {
+		margin-bottom: 0;
+		max-width: 100%;
+		width: 100%;
+	}
 
-p.wp-caption-text {
-	font-size: .85em;
-	margin: 4px 0 7px;
-	text-align: center;
-}
+	p.wp-caption-text {
+		font-size: .85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
 } /* end .wp-caption */
 
 /* image gallery styles */

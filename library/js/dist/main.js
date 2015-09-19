@@ -18,10 +18,18 @@
  * returns object with viewport dimensions to match css in width and height properties
  * ( source: http://andylangton.co.uk/blog/development/get-viewport-size-width-and-height-javascript )
  */
- function updateViewportDimensions() {
-	 var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
-	 return { width:x,height:y };
- }
+function updateViewportDimensions() {
+	var w = window,
+		d = document,
+		e = d.documentElement,
+		g = d.getElementsByTagName('body')[0],
+		x = w.innerWidth || e.clientWidth || g.clientWidth,
+		y = w.innerHeight || e.clientHeight || g.clientHeight;
+	return {
+		width: x,
+		height: y
+	};
+}
 // setting the viewport width
 var viewport = updateViewportDimensions();
 
@@ -30,11 +38,15 @@ var viewport = updateViewportDimensions();
  * Wrap your actions in this function to throttle the frequency of firing them off, for better performance, esp. on mobile.
  * ( source: http://stackoverflow.com/questions/2854407/javascript-jquery-window-resize-how-to-fire-after-the-resize-is-completed )
  */
- var waitForFinalEvent = (function () {
-	 var timers = {};
-	 return function (callback, ms, uniqueId) {
-		if (!uniqueId) { uniqueId = "Don't call this twice without a uniqueId"; }
-		if (timers[uniqueId]) { clearTimeout (timers[uniqueId]); }
+var waitForFinalEvent = (function() {
+	var timers = {};
+	return function(callback, ms, uniqueId) {
+		if (!uniqueId) {
+			uniqueId = "Don't call this twice without a uniqueId";
+		}
+		if (timers[uniqueId]) {
+			clearTimeout(timers[uniqueId]);
+		}
 		timers[uniqueId] = setTimeout(callback, ms);
 	};
 })();
@@ -89,13 +101,13 @@ var timeToWaitForLast = 2000;
  * images on mobile to save bandwidth. Once we hit an acceptable viewport
  * then we can swap out those images since they are located in a data attribute.
  */
- function loadGravatars() {
+function loadGravatars() {
 	// set the viewport using the function above
 	viewport = updateViewportDimensions();
 	// if the viewport is tablet or larger, we load in the gravatars
 	if (viewport.width >= 768) {
-		jQuery('.comment img[data-gravatar]').each(function(){
-			jQuery(this).attr('src',jQuery(this).attr('data-gravatar'));
+		jQuery('.comment img[data-gravatar]').each(function() {
+			jQuery(this).attr('src', jQuery(this).attr('data-gravatar'));
 		});
 	}
 } // end function
@@ -104,16 +116,19 @@ var timeToWaitForLast = 2000;
 /*
  * Put all your regular jQuery in here.
  */
- jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
 	//mobile menus for w > 768px
-	jQuery('header nav').meanmenu({
-		meanScreenWidth:"768"
+	$('header nav').meanmenu({
+		meanScreenWidth: '660',
+		meanNavPush: ''
 	});
 
 	/*
 	 * Let's fire off the gravatar function
 	 */
-	 loadGravatars();
+	loadGravatars();
 
-
- }); /* end of as page load scripts */
+	$('#bg_pattern').click(function() {
+		window.location = 'http://benbeekman.com/web';
+	});
+}); /* end of as page load scripts */

@@ -9,12 +9,22 @@
 //******************************************************************/
 //
 #slidecaption {
-		width: 80%;
-		margin-left: 10%;
+		width: 100%;
+		font-size: 2.5rem;
 }
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 480px){
+	#controls-wrapper { //caption jumps to  the bottom for short screens
+		top: auto;
+		bottom: 8rem; //wide, short screens have larger captions, so need more distance from the bottom
+
 	#slidecaption {
-		font-size: 2.6rem;
+		font-size: 2.5rem;
+	}
+	}
+}
+@media only screen and  (min-height: 480px) and (max-height: 600px){
+	#slidecaption {
+		font-size: 2.5rem;
 		top: 0;
 	}
 }

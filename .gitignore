@@ -34,3 +34,5 @@ bower_components/
 library/css/*
 build/
 node_modules/
+
+*.sublime-workspace

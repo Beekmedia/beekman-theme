@@ -11,8 +11,8 @@
 	<div id="inner-content" class="wrap cf">
 		<div id="main" role="main">
 
+		<div class="m-all t-2of3 d-5of7">
 
-		<div class="m-all t-2of3 d-5of7 floatright">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -39,28 +39,28 @@
 
 			<?php endwhile; else : ?>
 
-					<article id="post-not-found" class="hentry cf">
-						<header class="article-header">
-							<h1><?php _e( 'Oops, Post Not Found!', 'beekman-theme' ); ?></h1>
-						</header>
-						<section class="entry-content">
-							<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekman-theme' ); ?></p>
-						</section>
-						<footer class="article-footer">
-								<p><?php _e( 'This is the error message in the page.php template.', 'beekman-theme' ); ?></p>
-						</footer>
-					</article>
+				<article id="post-not-found" class="hentry cf">
+					<header class="article-header">
+						<h1><?php _e( 'Oops, Post Not Found!', 'beekman-theme' ); ?></h1>
+					</header>
+					<section class="entry-content">
+						<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'beekman-theme' ); ?></p>
+					</section>
+					<footer class="article-footer">
+							<p><?php _e( 'This is the error message in the page.php template.', 'beekman-theme' ); ?></p>
+					</footer>
+				</article>
 
-				<?php endif; ?>
+			<?php endif; ?>
 			</div>
 
-		<?php get_sidebar('home'); ?><!--  homepage sidebar is floated to left -->
+				<?php get_sidebar('home'); ?><!--  homepage sidebar is floated to left -->
 
-					</div>
+				</div>
 
-				<div class="clearfix"></div>
+			<div class="clearfix"></div>
 
-				<?php get_template_part('library/after_content', 'home'); ?>
+			<?php get_template_part('library/after_content', 'home'); ?>
 
 		</div>
 

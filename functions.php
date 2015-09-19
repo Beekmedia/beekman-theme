@@ -12,12 +12,8 @@ sidebars, comments, ect.
 require_once( 'library/beekman.php' );
 
 
-
-// USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
-//require_once( 'library/custom-post-type.php' );
-
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
-// require_once( 'library/admin.php' );
+require_once( 'library/admin.php' );
 
 /*********************
 LAUNCH beekman
@@ -160,8 +156,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'home',
-		'name' => __( 'Home Page Sidebar', 'beekman-theme' ),
-		'description' => __( 'The home page sidebar.', 'beekman-theme' ),
+		'name' => __( 'Web Gallery Sidebar', 'beekman-theme' ),
+		'description' => __( 'The Web Work page sidebar.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -169,8 +165,8 @@ function beekman_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'home-after',
-		'name' => __( 'After Home Page Content', 'beekman-theme' ),
-		'description' => __( 'A widget banner below the main column of the home page.', 'beekman-theme' ),
+		'name' => __( 'After Web Gallery Content', 'beekman-theme' ),
+		'description' => __( 'A widget banner below the main column of the Web Work page.', 'beekman-theme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '',

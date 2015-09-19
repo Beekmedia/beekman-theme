@@ -12,11 +12,11 @@ be seen on the Desktop.
 @media only screen and (max-height: 480px){
 	#controls-wrapper { //caption jumps to  the bottom for short screens
 		top: auto;
-		bottom: 9rem; //wide, short screens have larger captions, so need more distance from the bottom
+		bottom: 10rem; //wide, short screens have larger captions, so need more distance from the bottom
 	}
 }
 #slidecaption {
-	font-size: 4rem;
+	font-size: 2.5rem;
 }
 //at desktop size, we want two fewer vertical images and one more horizontal image
 #home-sb .su-custom-gallery  .su-custom-gallery-slide {
@@ -24,7 +24,9 @@ be seen on the Desktop.
 		display: none;
 	}
 }
-
+.slogan {
+	font-size: 1.5rem;
+}
 // #home-sb .su-custom-gallery {
 // 	> .su-custom-gallery-slide {
 // 		&:nth-child(4) {
