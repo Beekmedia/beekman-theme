@@ -23,8 +23,17 @@
 									<h1 class="page-title"><?php the_title(); ?></h1>
 									<?php if ( has_post_thumbnail() ) {
 										echo '<div class="aligncenter fullwidth abs-top">';
-											the_post_thumbnail('full' );
+										if(get_field('project_url'));
+											{
+												echo '<a href=\"' . the_field('project_url') . ' " \>';
+												the_post_thumbnail('full' );
+												if(get_field('project_url'));
+													{
+														?></a><?php
+													}
+												}
 										echo '</div>';
+
 									} //end post thumbnail
 								?>
 
@@ -41,7 +50,8 @@
 
 							</article>
 
-							<?php endwhile; else : ?>
+							<?php endwhile;
+							else : ?>
 
 									<article id="post-not-found" class="hentry cf">
 											<header class="article-header">
@@ -58,7 +68,7 @@
 							<?php endif; ?>
 
 						</div>
-<!-- 						<?php get_sidebar('web'); ?> -->
+
 				</div>
 
 			</div>

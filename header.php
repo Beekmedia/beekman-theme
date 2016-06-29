@@ -22,9 +22,11 @@
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Play:400&text=ben" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Play:400&text=Beekman" rel="stylesheet">
+
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 			<![endif]-->
@@ -39,17 +41,27 @@
 			<?php // end of wordpress head ?>
 
 			<?php // drop Google Analytics Here ?>
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-30348778-1', 'auto');
+			  	ga('send', 'pageview');
+
+			</script>
 			<?php // end analytics ?>
+</head>
 
-		</head>
 
-		<body <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 
-			<div id="container">
-    				<header class="header" role="banner">
-    					<div id="inner-header" class="wrap cf">
-    						<div class="split">
-	    						<div id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><h1><strong>Ben</strong><b>Beekman</b></h1></a></div>
+	<div id="container">
+				<header class="header" role="banner">
+					<div id="inner-header" class="wrap cf">
+						<div class="split">
+  							<div id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><h1><strong>Ben</strong><b>Beekman</b></h1></a></div>
 							<div class="slogan"><?php bloginfo('description'); ?></div>
 							<nav role="navigation">
 								<?php wp_nav_menu(array(
@@ -68,11 +80,9 @@
 
 			    				</nav>
 
-	    						<?php //semi-minimal markup for css logo with transitions?>
+  							<?php //semi-minimal markup for css logo with transitions?>
 
-	    					</div> <!-- .split -->
-	    				</div>  <!-- inner-header -->
-
-				<?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail(); ?>
-
-    				</header>
+  							</div> <!-- .split -->
+  						</div>  <!-- inner-header -->
+					<?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail(); ?>
+				</header>

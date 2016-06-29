@@ -9,17 +9,43 @@ possible. This is called at the top of the main stylesheet and will be used acro
 
 ******************************************************************/
 #bg-pattern {
-    cursor: pointer;
+	cursor: pointer;
 }
 
+a.secondary-btn,
+.sidebar-mc-form .button2 {
+	-moz-border-radius: 6px;
+	-moz-box-shadow: inset 0 1px 2px #fff, inset 0 -1px 1px #beb8ac, 0 1px 1px #fff;
+	-webkit-border-radius: 6px;
+	-webkit-box-shadow: inset 0 1px 2px #fff, inset 0 -1px 1px #beb8ac, 0 1px 1px #fff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(.05, #f2ece2), color-stop(1, #e0dacc));
+	background: -moz-linear-gradient(center top, rgb(242, 236, 226) 5%, rgb(224, 218, 204) 100%);
+	background: -o-linear-gradient(center top, #f2ece2 5%, #e0dacc 100%);
+	background-color: rgb(242, 236, 226);
+	border: 1px solid rgb(177, 170, 154);
+	border-radius: 6px;
+	box-shadow: inset 0 1px 2px rgb(255, 255, 255), inset 0 -1px 1px rgb(190, 184, 172), 0 1px 1px rgb(255, 255, 255);
+	color: RGB(85, 85, 85);
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#d1d0cf');
+	padding: .65625em 1.3125em;
+	-o-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-ms-box-shadow: inset 0 1px 2px #fff, inset 0 -1px 1px #beb8ac, 0 1px 1px #fff;
+	-o-box-shadow: inset 0 1px 2px #fff, inset 0 -1px 1px #beb8ac, 0 1px 1px #fff;
+}
 
-//front page supersized slideshow
+/*=============================================
+=            Supersized slideshow            =
+=============================================*/
+
 #controls-wrapper {
 	left: 0;
 	top: 5rem;
 }
 
-#controls-wrapper, #controls {
+#controls-wrapper,
+#controls {
 	background: transparent;
 	left: 0;
 	position: absolute;
@@ -43,35 +69,51 @@ possible. This is called at the top of the main stylesheet and will be used acro
 }
 
 //adjust location of the caption for fullscreen slideshow on home page.
-@media only screen and (max-height: 480px) {
-	#controls-wrapper { //caption jumps to  the bottom for short screens
+@media only screen and (max-height:480px) {
+	#controls-wrapper {
+		//caption jumps to  the bottom for short screens
 		bottom: 7rem;
 		top: auto;
 	}
+
 }
 
-@media only screen and (min-height: 501px) and (max-height: 660px){
-	#controls-wrapper { //caption moves down less for short screens
+@media only screen and (min-height:501px) and (max-height:660px) {
+	#controls-wrapper {
+		//caption moves down less for short screens
 		top: 5.4rem;
 	}
+
 }
 
-@media only screen and (min-height: 661px) and (max-height: 899px){
-	#controls-wrapper { //caption moves down less for short screens
+@media only screen and (min-height:661px) and (max-height:899px) {
+	#controls-wrapper {
+		//caption moves down less for short screens
 		top: 80px;
 	}
+
 }
 
-@media only screen and (min-height: 900px){
-	#controls-wrapper { //caption moves down more for tall screens as black space above image grows
+@media only screen and (min-height:900px) {
+	#controls-wrapper {
+		//caption moves down more for tall screens as black space above image grows
 		top: 120px;
 	}
+
 }
 
-#play-button, #slidecounter, #slide-list, .slide-counter, #tray-button {
+#play-button,
+#slidecounter,
+#slide-list,
+.slide-counter,
+#tray-button {
 	display: none;
 	visibility: hidden;
 }
+
+/*=====  End of supersized slideshow  ======*/
+
+
 
 /* Remove all styling from Galleries. This will allow Masonry to work a bit better. Only available on WP >= 3.9 since it requires HTML5 <figure> */
 .gallery {
@@ -79,11 +121,11 @@ possible. This is called at the top of the main stylesheet and will be used acro
 }
 
 .gallery-caption {
-	font-size: .875rem;
-	line-height: 125%;
 	background-color: rgba(255, 255, 255, .7);
 	bottom: 3px;
 	color: darken($white, 50%);
+	font-size: .875rem;
+	line-height: 125%;
 }
 
 .home {
@@ -132,9 +174,10 @@ possible. This is called at the top of the main stylesheet and will be used acro
 			height: auto;
 			width: 100%;
 		}
-	}
-}
 
+	}
+
+}
 
 #home-sb .su-custom-gallery {
 	display: flex;
@@ -143,9 +186,10 @@ possible. This is called at the top of the main stylesheet and will be used acro
 
 	// > .su-custom-gallery-slide {
 		// 	&:nth-child(4) {
-	// 		display: none;
-	// 		visibility: hidden;
-	// }
+			// 		display: none;
+			// 		visibility: hidden;
+			//
+		//}
 
 	.fullwidth {
 		height: auto;
@@ -156,6 +200,7 @@ possible. This is called at the top of the main stylesheet and will be used acro
 			text-align: center;
 			width: 100%;
 		}
+
 	}
 
 	article {
@@ -165,53 +210,58 @@ possible. This is called at the top of the main stylesheet and will be used acro
 			display: none;
 			visibility: false;
 		}
+
 	}
 
 	.su-custom-gallery-slide img {
 		height: auto;
 		width: 100%;
 	}
+
 }
 
 /*********************
 GENERAL STYLES
 *********************/
+.textwidget {
+	font-size: 1rem;
+}
 
-.textwidget {font-size: 1rem;}
 p {
 	font-size: 1rem;
 }
 
 nav>.top-nav {
-
 	li {
-
 		a {
-			border-radius: 0.3rem;
+			border-radius: .3rem;
 			color: $link-color;
 			font-size: 1.125rem;
 			font-weight: bold;
-			padding: 0.1125rem 0.5rem;
+			padding: .1125rem .5rem;
+
 			&:active,
 			&:hover {
 				background-color: lighten($black, 5%);
 			}
+
 		}
+
 	}
+
 }
 
 body {
 	background-color: $black;
 	color: $white;
 	font-family: $sans-serif;
-	font-size: 62.5%; //16/10= 1rem to 10px
-	line-height: 1.5;
+	font-size: 62.5%;
+
 	-webkit-font-smoothing: antialiased;
+	//16/10= 1rem to 10px
+	line-height: 1.5;
+
 }
-
-
-
-
 
 //LAYOUT & GRID STYLES
 
@@ -224,25 +274,26 @@ body {
 /*********************
 LINK STYLES
 *********************/
-
-a, a:visited {
+a,
+a:visited {
 	color: $link-color;
+
 	/* on hover */
 	&:hover,
 	&:focus {
 		color: $link-hover;
 	}
+
 	/* mobile tap color */
 	&:link {
-	// this highlights links on iPhones/iPads:
-	-webkit-tap-highlight-color: rgba(0, 0, 0, .3);
+		// this highlights links on iPhones/iPads: -webkit-tap-highlight-color:rgba(0, 0, 0, .3);
 	}
+
 }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-
 h1,
 .h1,
 h2,
@@ -254,14 +305,16 @@ h4,
 h5,
 .h5 {
 	font-weight: 500;
-
 	text-rendering: optimizelegibility;
+
 	a {
 		text-decoration: none;
 	}
+
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 }
@@ -270,22 +323,26 @@ h1, .h1 {
 	padding: 1rem .5rem 0;
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: .375em;
 }
 
-h3, .h3 {
+h3,
+.h3 {
 	font-size: 1.125rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
 	font-size: 1.1rem;
 	font-weight: 700;
 }
 
-h5, .h5 {
+h5,
+.h5 {
 	font-size: .846em;
 	letter-spacing: 2px;
 	line-height: 2.09em;
@@ -295,10 +352,6 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-
-
-
-
 header h1 {
 	font-family: 'Play', sans-serif;
 	line-height: 1em;
@@ -306,7 +359,8 @@ header h1 {
 	> strong {
 		color: $sky-blue;
 		display: inline-block;
-		font-size: 2rem; //"Ben"
+		font-size: 2rem;
+		//"Ben"
 		font-style: normal;
 		font-weight: bold;
 		position: relative;
@@ -318,9 +372,11 @@ header h1 {
 		&:hover {
 			color: $electric-blue;
 		}
+
 	}
 
-	> b { //"Beekman"
+	> b {
+		//"Beekman"
 		color: $lime;
 		font-size: 2rem;
 		font-weight: 700;
@@ -333,26 +389,31 @@ header h1 {
 		&:hover {
 			color: $electric-blue;
 		}
+
 	}
+
 }
 
-	a {
-		color: $white;
-		transition-duration: .7s;
-		transition-property: color;
-		transition-timing-function: ease;
+a {
+	color: $white;
+	transition-duration: .7s;
+	transition-property: color;
+	transition-timing-function: ease;
 
-		h1 {
-			font-size: 2rem;
-			line-height: 1;
-			margin: 0;
-		}
+	h1 {
+		font-size: 2rem;
+		line-height: 1;
+		margin: 0;
 	}
 
-@media only screen and (max-width:660px) and (max-height:900px){
-	#controls-wrapper { //move the caption down the page to compensate for mean/menu
+}
+
+@media only screen and (max-width:660px) and (max-height:900px) {
+	#controls-wrapper {
+		//move the caption down the page to compensate for mean/menu
 		top: 8.4rem;
 	}
+
 }
 
 .slogan {
@@ -372,20 +433,20 @@ header h1 {
 	position: relative;
 }
 
-@media only screen and (min-width: 320px) and (max-width:440px){
+@media only screen and (min-width:320px) and (max-width:440px) {
 	.slogan {
 		font-size: .8rem;
 		position: relative;
 		text-align: center;
-
 	}
 
 	#logo {
 		text-align: center;
 	}
+
 }
 
-@media only screen and (min-width: 440px) and (max-width:472px){
+@media only screen and (min-width:440px) and (max-width:472px) {
 	.slogan {
 		font-size: .8rem;
 		position: relative;
@@ -396,15 +457,17 @@ header h1 {
 	#logo {
 		float: left;
 	}
+
 }
 
-@media only screen and (min-width: 470px) and (max-width:500px){
+@media only screen and (min-width:470px) and (max-width:500px) {
 	.slogan {
 		font-size: .825rem;
 		position: relative;
 		text-align: center;
 		top: .9em;
 	}
+
 }
 
 @media screen and (min-width:478px) and (max-width:679px) {
@@ -412,12 +475,12 @@ header h1 {
 		display: none;
 		visibility: hidden;
 	}
+
 }
 
 /**********************************************************************
 Input elements-- forms for contact page
 ***********************************************************************/
-
 .wpcf7-form-control-wrap input[type='text'] {
 	width: 100%;
 }
@@ -456,9 +519,7 @@ input[type='submit'] {
 /**********************************************************************
 Resume formatting
 ***********************************************************************/
-.entry-content h3 {
-	border-bottom: 1px solid $gray;
-}
+
 
 .resume {
 	section>header {
@@ -478,7 +539,9 @@ Resume formatting
 				margin-bottom: 0;
 				padding: 0;
 			}
+
 		}
+
 	}
 
 	.orgName a:visited {
@@ -489,6 +552,7 @@ Resume formatting
 	.hentry  .entry-content section header {
 		padding: 1rem 0 .5rem;
 	}
+
 }
 
 cite {
@@ -503,13 +567,16 @@ cite {
 .resume section header div {
 	display: inline;
 }
+
 // .page .resume section header {
-// text-align: center;
-// margin-bottom: 0;
-// background: none;
-// display: block;
-// line-height: 1.4em;
-// }
+	// text-align: center;
+	// margin-bottom: 0;
+	// background: none;
+	// display: block;
+	// line-height: 1.4em;
+	//
+//	}
+
 //
 
 
@@ -529,36 +596,26 @@ cite {
 	padding: 0;
 }
 
-.entry-content .resume {
-	padding: 0 1%;
-	position: relative;
-}
-
-
-
 .location {
 	float: right;
 	position: inline;
 }
 
-
 header nav {
 	display: inline-block;
 	float: right;
+
 	.nav {
 		display: inline-block;
 	}
-}
 
+}
 
 /**********************************************************************
 End resume formatting
 ***********************************************************************/
 
-
-
 /**************************************************************************************************************** {end} */
-
 
 /*********************
 NAVIGATION STYLES
@@ -590,12 +647,21 @@ and more scalable.
 				a {
 					padding-left: 30px;
 				}
+
 			}
+
 		}
-	} /* end .nav li */
-/* highlight current page */
-/* end current highlighters */
-} /* end .nav */
+
+	}
+
+	/* end .nav li */
+
+	/* highlight current page */
+
+	/* end current highlighters */
+}
+
+/* end .nav */
 
 /*********************
 POSTS & CONTENT STYLES
@@ -624,9 +690,12 @@ POSTS & CONTENT STYLES
 		p {
 			margin: 0;
 		}
-	}
-} /* end .hentry */
 
+	}
+
+}
+
+/* end .hentry */
 .single-title,
 .page-title,
 .entry-title {
@@ -645,10 +714,18 @@ POSTS & CONTENT STYLES
 	font-size: 1.25rem;
 	padding: 0;
 
-	p {
+	.resume {
+		padding: 0 1%;
+		position: relative;
+	}
 
+	p {
 		font-size: 1.125rem;
 		margin: 1.5rem;
+	}
+
+	h3 {
+		border-bottom: 1px solid $gray;
 	}
 
 	table {
@@ -663,6 +740,7 @@ POSTS & CONTENT STYLES
 			margin: 0 0 7px;
 			text-transform: uppercase;
 		}
+
 	}
 
 	tr {
@@ -671,6 +749,7 @@ POSTS & CONTENT STYLES
 		&:nth-child(even) {
 			background-color: $light-gray;
 		}
+
 	}
 
 	td {
@@ -680,6 +759,7 @@ POSTS & CONTENT STYLES
 		&:last-child {
 			border-right: 0;
 		}
+
 	}
 
 	th {
@@ -690,6 +770,7 @@ POSTS & CONTENT STYLES
 		&:last-child {
 			border-right: 0;
 		}
+
 	}
 
 	blockquote {
@@ -734,9 +815,12 @@ POSTS & CONTENT STYLES
 			margin: 0 0 1.5em;
 			padding: 1.5em;
 		}
-	}
-} /* end .entry-content */
 
+	}
+
+}
+
+/* end .entry-content */
 .aligncenter .attachment-full {
 	height: auto;
 	max-width: 100%;
@@ -745,11 +829,11 @@ POSTS & CONTENT STYLES
 		height: auto;
 		max-width: 100%;
 	}
+
 }
 
 .supersized-content {
 	font-size: 1.25rem;
-
 }
 
 dl.gallery-item {
@@ -763,8 +847,7 @@ dl.gallery-item {
 	max-width: 100%;
 	padding: 5px;
 
-/* images inside wp-caption */
-
+	/* images inside wp-caption */
 	img {
 		margin-bottom: 0;
 		max-width: 100%;
@@ -776,7 +859,10 @@ dl.gallery-item {
 		margin: 4px 0 7px;
 		text-align: center;
 	}
-} /* end .wp-caption */
+
+}
+
+/* end .wp-caption */
 
 /* image gallery styles */
 .gallery-item {
@@ -804,7 +890,10 @@ dl.gallery-item {
 	.next-link {
 		float: right;
 	}
-} /* end .wp-prev-next */
+
+}
+
+/* end .wp-prev-next */
 
 /*********************
 SIDEBARS & ASIDES
@@ -822,14 +911,12 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-
 .footer {
 	background-color: $black;
 	clear: both;
 	color: $light-gray;
 	font-size: 1rem;
 }
-
 
 .project-title-overlay {
 	color: rgb(255, 255, 255);
