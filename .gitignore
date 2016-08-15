@@ -36,3 +36,5 @@ build/
 node_modules/
 
 *.sublime-workspace
+
+.DS_Store

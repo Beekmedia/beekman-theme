@@ -10,7 +10,7 @@
 
 							<header class="article-header">
 
-								<h1><?php _e( 'Not What You Were Looking For, 'beekman-theme' ); ?></h1>
+								<h1><?php _e( 'Not What You Were Looking For', 'beekman-theme' ); ?></h1>
 
 							</header>
 
